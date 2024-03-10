@@ -1,0 +1,26 @@
+<ModMetaData>
+	<name>Astartes Vehicles</name>
+	<author>Mewn Goddess, Amortem, Phonicmas and Grim Cheese</author>
+	<packageId>NCFC.SMVehicles</packageId>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<modDependencies>
+	<li>
+		<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+		<displayName>Vanilla Expanded Framework</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+	</li>
+	<li>
+		<packageId>smashphil.vehicleframework</packageId>
+		<displayName>Vehicle Framework</displayName>
+		<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3014915404</steamWorkshopUrl>
+	</li>
+	</modDependencies>
+	<loadAfter>
+		<li>smashphil.vehicleframework</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+	</loadAfter>
+	<description>
+	</description>
+</ModMetaData>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+										<!--============Lascannon=============-->
+	<SoundDef>
+		<defName>GF40K_LascannonReload</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>GF40K_LascannonReload</clipPath>
+					</li>
+				</grains>
+				<volumeRange>45~50</volumeRange>
+				<pitchRange>0.8~0.85</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>GF40K_LascannonShot</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>GF40K_LascannonShot</clipPath>
+						<!--<pitchRange>0.6~0.7</pitchRange>-->
+					</li>
+				</grains>
+				<volumeRange>40~43</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+										<!--============Twinbolter=============-->
+	<SoundDef>
+		<defName>GF40K_TwinbolterReload</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>GF40K_TwinbolterReload</clipPath>
+					</li>
+				</grains>
+				<volumeRange>30~30</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>GF40K_TwinbolterShot</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>GF40K_TwinbolterShot</clipPath>
+					</li>
+				</grains>
+				<volumeRange>20~25</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+										<!--============SmokeLauncher=============-->
+	<SoundDef>
+		<defName>GF40K_SmokelauncherReload</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>GF40K_SmokeReload</clipPath>
+					</li>
+				</grains>
+				<volumeRange>20~25</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+										<!--============Whirlwind=============-->
+	<SoundDef>
+		<defName>GF40K_Woosh</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Whirlwind/GF40K_Launch</clipPath>
+					</li>
+				</grains>
+				<volumeRange>40~55</volumeRange>
+				<pitchRange>0.9~1.3</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>GF40K_WW_Reload</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Whirlwind/GF40K_Whirlwind_Reload</clipPath>
+					</li>
+				</grains>
+				<volumeRange>30</volumeRange>
+				<pitchRange>0.9</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+											<!--============HeavyFlamer=============-->
+	<SoundDef>
+		<defName>GF40K_Flamer_Reload</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>GF40K_FlamerReload</clipPath>
+					</li>
+				</grains>
+				<volumeRange>40~55</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+											<!--============MinefieldMissile=============-->
+	<SoundDef>
+		<defName>GF40K_MinePlanted</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>GF40K_BombletPlant</clipPath>
+					</li>
+				</grains>
+				<volumeRange>40~55</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>GF40K_Decouple</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>GF40K_Swoosh1</clipPath>
+					</li>
+				</grains>
+				<volumeRange>40~55</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>
