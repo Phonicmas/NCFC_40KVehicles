@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  
+  <!-- EN: Land Raider Redeemer -->
+  <GF40K_LandRaiderRDMR.label>«Лендрейдер «Искупитель»</GF40K_LandRaiderRDMR.label>
+  <!-- EN: The Land Raider is a heavily armored personnel carrier primarily used by the Space Marines, but also utilized by the Adeptus Mechanicus, Inquisition, and certain influential Rogue Traders.\nOften referred as a 'Mobile Fortress', Land Raiders serve as a mobile command center. This particular pattern is equipped with a twin-linked Assault cannon along with two sponson-mounted Flamestorm cannons.\n\nEvery Land Raider comes with an automated control system known as the Machine Spirit. The Machine Spirit supports the crew in operating the vehicle, and in case of emergencies, it can control the vehicle independently.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1, Personnel x6\n&lt;color=#ffd75d&gt;Armament:&lt;/color&gt; Twin-linked Assault Cannons, \nTwin-linked Flamestorm Cannons\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel -->
+  <GF40K_LandRaiderRDMR.description>Этот тяжелобронированный транспортёр преимущественно используется Адептус Астартес, но также иногда применяется Адептус Механикус, Инквизицией и некоторыми влиятельными вольными торговцами.\nЧасто называемые передвижными крепостями, «Лендрейдеры» служат в качестве мобильного командного центра. Данная модель оснащена спаренными штурмовыми пушками и двумя спаренными тяжёлыми огнемётными пушками «Огненный Шторм», установленными на спонсоны.\n\nКаждый «Лендрейдер» оснащён мощным «Машинным духом» — искусственным интеллектом, созданным Адептус Механикус. Он необходим для помощи в управлении машиной, а в случае гибели экипажа способен управлять транспортёром самостоятельно.\n\n&lt;color=#ffd75d&gt;Экипаж:&lt;/color&gt; Водитель x1, Стрелок x1, Личный состав x6\n&lt;color=#ffd75d&gt;Вооружение:&lt;/color&gt; Спаренные штурмовые пушки, Спаренные огнемётные пушки\n&lt;color=#ffd75d&gt;Тип топлива:&lt;/color&gt; Химтопливо</GF40K_LandRaiderRDMR.description>
+
+  <!-- EN: Driver -->
+  <GF40K_LandRaiderRDMR.properties.roles.0.label>Водитель</GF40K_LandRaiderRDMR.properties.roles.0.label>
+  <!-- EN: Flamestorm cannons gunner -->
+  <GF40K_LandRaiderRDMR.properties.roles.1.label>Стрелок огнемётных пушек</GF40K_LandRaiderRDMR.properties.roles.1.label>
+  <!-- EN: Personnel -->
+  <GF40K_LandRaiderRDMR.properties.roles.2.label>Личный состав</GF40K_LandRaiderRDMR.properties.roles.2.label>
+  <!-- EN: Engine -->
+  <GF40K_LandRaiderRDMR.components.0.label>Двигатель</GF40K_LandRaiderRDMR.components.0.label>
+  <!-- EN: Left Track -->
+  <GF40K_LandRaiderRDMR.components.1.label>Левая гусеничная цепь</GF40K_LandRaiderRDMR.components.1.label>
+  <!-- EN: Right Track -->
+  <GF40K_LandRaiderRDMR.components.2.label>Правая гусеничная цепь</GF40K_LandRaiderRDMR.components.2.label>
+  <!-- EN: Front Left Drive Sprocket -->
+  <GF40K_LandRaiderRDMR.components.3.label>Левое направляющее колесо</GF40K_LandRaiderRDMR.components.3.label>
+  <!-- EN: Front Right Drive Sprocket -->
+  <GF40K_LandRaiderRDMR.components.4.label>Правое направляющее колесо</GF40K_LandRaiderRDMR.components.4.label>
+  <!-- EN: Back Left Drive Sprocket -->
+  <GF40K_LandRaiderRDMR.components.5.label>Левый ведущий каток</GF40K_LandRaiderRDMR.components.5.label>
+  <!-- EN: Back Right Drive Sprocket -->
+  <GF40K_LandRaiderRDMR.components.6.label>Правый ведущий каток</GF40K_LandRaiderRDMR.components.6.label>
+  <!-- EN: Gearbox -->
+  <GF40K_LandRaiderRDMR.components.7.label>Коробка передач</GF40K_LandRaiderRDMR.components.7.label>
+  <!-- EN: Front Armor Plating -->
+  <GF40K_LandRaiderRDMR.components.8.label>Передняя бронепанель</GF40K_LandRaiderRDMR.components.8.label>
+  <!-- EN: Left Armor Plating -->
+  <GF40K_LandRaiderRDMR.components.9.label>Левая бронепанель</GF40K_LandRaiderRDMR.components.9.label>
+  <!-- EN: Right Armor Plating -->
+  <GF40K_LandRaiderRDMR.components.10.label>Правая бронепанель</GF40K_LandRaiderRDMR.components.10.label>
+  <!-- EN: Rear Armor Plating -->
+  <GF40K_LandRaiderRDMR.components.11.label>Задняя бронепанель</GF40K_LandRaiderRDMR.components.11.label>
+  <!-- EN: Fuel Tank -->
+  <GF40K_LandRaiderRDMR.components.12.label>Топливный бак</GF40K_LandRaiderRDMR.components.12.label>
+  <!-- EN: Control Panel -->
+  <GF40K_LandRaiderRDMR.components.13.label>Приборная панель</GF40K_LandRaiderRDMR.components.13.label>
+  <!-- EN: Steering system -->
+  <GF40K_LandRaiderRDMR.components.14.label>Рулевое устройство</GF40K_LandRaiderRDMR.components.14.label>
+  <!-- EN: Roof -->
+  <GF40K_LandRaiderRDMR.components.15.label>Крыша</GF40K_LandRaiderRDMR.components.15.label>
+  
+  <!-- EN: Assault Cannon -->
+  <GF40K_LandRaiderRDMR.comps.CompVehicleTurrets.turrets.0.gizmoLabel>Штурмовая пушка</GF40K_LandRaiderRDMR.comps.CompVehicleTurrets.turrets.0.gizmoLabel>
+  <!-- EN: Left Cannon -->
+  <GF40K_LandRaiderRDMR.comps.CompVehicleTurrets.turrets.1.gizmoLabel>Левый огнемёт</GF40K_LandRaiderRDMR.comps.CompVehicleTurrets.turrets.1.gizmoLabel>
+  <!-- EN: Right Cannon -->
+  <GF40K_LandRaiderRDMR.comps.CompVehicleTurrets.turrets.2.gizmoLabel>Правый огнемёт</GF40K_LandRaiderRDMR.comps.CompVehicleTurrets.turrets.2.gizmoLabel>
+</LanguageData>

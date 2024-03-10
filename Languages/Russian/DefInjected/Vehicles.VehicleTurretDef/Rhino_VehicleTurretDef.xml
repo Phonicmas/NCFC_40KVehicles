@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Select Target.\n\nFire for effect -->
+  <GF40K_Rhino_MainTurret.gizmoDescription>Выбрать цель.\n\nВыстрелить.</GF40K_Rhino_MainTurret.gizmoDescription>
+  <!-- EN: Storm Bolter -->
+  <GF40K_Rhino_MainTurret.label>шторм-болтер</GF40K_Rhino_MainTurret.label>
+  <!-- EN: The Storm Bolter is a double-barrelled version of the standard .75 calibre bolter. It is often mounted on armored vehicles of the Imperium. Because it's heavier and has more recoil than a standard bolter, it's rarely used by Astra Militarum regiments. -->
+  <GF40K_Rhino_MainTurret.description>Шторм-болтер — это двухствольная версия стандартного болтера .75 калибра. Он часто используется в качестве вспомогательного оружия, устанавливаемого на боевые танки Империума. Поскольку он тяжелее стандартного варианта и имеет большую отдачу, он очень редко используется полками Астра Милитарум.</GF40K_Rhino_MainTurret.description>
+  <!-- EN: Burst -->
+  <GF40K_Rhino_MainTurret.fireModes.0.label>стрельба очередями</GF40K_Rhino_MainTurret.fireModes.0.label>
+  <!-- EN: Single Shot -->
+  <GF40K_Rhino_MainTurret.fireModes.1.label>стрельба одиночными выстрелами</GF40K_Rhino_MainTurret.fireModes.1.label>
+  
+
+  <!-- EN: Select Target.\n\nFire for effect -->
+  <GF40K_Rhino_Smoke_Launcher.gizmoDescription>Выбрать цель.\n\nВыстрелить.</GF40K_Rhino_Smoke_Launcher.gizmoDescription>
+  <!-- EN: smoke launcher -->
+  <GF40K_Rhino_Smoke_Launcher.label>дымовой гранатомёт</GF40K_Rhino_Smoke_Launcher.label>
+  <!-- EN: Smoke launcher is a simple yet crucial defensive tool commonly found on military vehicles and armored units. When activated, it emits a dense cloud of smoke, obscuring visibility and providing cover from enemy targeting systems. -->
+  <GF40K_Rhino_Smoke_Launcher.description>Дымовая пусковая установка — это простое, но очень важное средство обороны, которое часто устанавливается на боевых машинах и бронетехнике. При попадании в цель дымовой снаряд выпускает густое облако дыма, маскирующее цели и препятствующее наведению турелей.</GF40K_Rhino_Smoke_Launcher.description>
+  <!-- EN: Burst -->
+  <GF40K_Rhino_Smoke_Launcher.fireModes.0.label>стрельба очередями</GF40K_Rhino_Smoke_Launcher.fireModes.0.label>
+  <!-- EN: Single Shot -->
+  <GF40K_Rhino_Smoke_Launcher.fireModes.1.label>стрельба одиночными выстрелами</GF40K_Rhino_Smoke_Launcher.fireModes.1.label>
+</LanguageData>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Vehicula Astartes -->
+  <GF40K_SpaceMarineVehicles.label>Vehicula Astartes</GF40K_SpaceMarineVehicles.label>
+  <!-- EN: Core research of the Space Marine vehicles.\n\n"From the rage of the Beast, iron protect us!" -->
+  <GF40K_SpaceMarineVehicles.description>Основной исследовательский проект, открывающий базовые принципы конструирования техники Адептус Астартес.\n\n«От гнева Зверя, железо, защити нас!»</GF40K_SpaceMarineVehicles.description>
+  
+  <!-- EN: Cornu Ferreum -->
+  <GF40K_RhinoBaseResearch.label>Cornu Ferreum</GF40K_RhinoBaseResearch.label>
+  <!-- EN: Learn how to build the Rhino chassis, which also serves as a weapons platform for other vehicles. -->
+  <GF40K_RhinoBaseResearch.description>Исследование технологий создания шасси «Носорог» (Rhino) — имперского гусеничного бронетранспортера, который также служит оружейной платформой для других модификаций.</GF40K_RhinoBaseResearch.description>
+  
+  <!-- EN: Ignis Deivos -->
+  <GF40K_WhirlwindResearch.label>Ignis Deivos</GF40K_WhirlwindResearch.label>
+  <!-- EN: Learn how to build the Whirlwind mobile artillery tank. -->
+  <GF40K_WhirlwindResearch.description>Исследование технологий создания самоходной артиллерийской установки «Вихрь» (Whirlwind).</GF40K_WhirlwindResearch.description>
+  
+  <!-- EN: Ira Caeli -->
+  <GF40K_AnnihilatorResearch.label>Ira Caeli</GF40K_AnnihilatorResearch.label>
+  <!-- EN: Learn how to build the Predator Annihilator tank. -->
+  <GF40K_AnnihilatorResearch.description>Исследование технологий создания танка «Хищник-Аннигилятор» (Predator Annihilator).</GF40K_AnnihilatorResearch.description>
+  
+  <!-- EN: Machina Anima -->
+  <GF40K_LandRaiderResearch.label>Machina Anima</GF40K_LandRaiderResearch.label>
+  <!-- EN: Learn how to build the Land Raider armored personnel carrier. -->
+  <GF40K_LandRaiderResearch.description>Исследование технологий создания штурмового боевого транспорта «Лендрейдер» (Land Raider).</GF40K_LandRaiderResearch.description>
+</LanguageData>

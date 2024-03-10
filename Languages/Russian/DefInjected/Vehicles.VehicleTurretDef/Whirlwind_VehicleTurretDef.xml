@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Select Target.\n\nFire for effect -->
+  <GF40K_Whirlwind_MainTurret.gizmoDescription>Выбрать цель.\n\nВыстрелить.</GF40K_Whirlwind_MainTurret.gizmoDescription>
+  <!-- EN: Whirlwind Missile Launcher -->
+  <GF40K_Whirlwind_MainTurret.label>ракетный комплекс «Вихрь»</GF40K_Whirlwind_MainTurret.label>
+  <!-- EN: The Whirlwind Multiple Missile Launcher is a devastating artillery weapon. This vehicle-mounted system unleashes a storm of guided missiles upon its targets, saturating the battlefield with explosive firepower. Known for its versatility, the Whirlwind can be equipped with different types of warheads, making it equally effective against both infantry and armored units. With its ability to rain down destruction from a safe distance, this unit is a key asset for the Imperium's long-range artillery support in the never-ending war of the 41st millennium. -->
+  <GF40K_Whirlwind_MainTurret.description>Это разрушительное артиллерийское орудие, устанавливаемое на боевых машинах Империума, способно обрушивать на врага шквал управляемых ракет, покрывая поле боя смертоносным огнем. Известный своей универсальностью, «Вихрь» может быть оснащён различными типами боеголовок, что делает его одинаково эффективным как против пехоты, так и против бронетехники.</GF40K_Whirlwind_MainTurret.description>
+  <!-- EN: Barrage -->
+  <GF40K_Whirlwind_MainTurret.fireModes.0.label>залп</GF40K_Whirlwind_MainTurret.fireModes.0.label>
+  <!-- EN: Single -->
+  <GF40K_Whirlwind_MainTurret.fireModes.1.label>стрельба одиночными выстрелами</GF40K_Whirlwind_MainTurret.fireModes.1.label>
+</LanguageData>

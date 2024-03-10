@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Select Target.\n\nFire for effect -->
+  <Annihilator_MainCannon.gizmoDescription>Выбрать цель.\n\nВыстрелить.</Annihilator_MainCannon.gizmoDescription>
+  <!-- EN: Stormbringer cannon -->
+  <Annihilator_MainCannon.label>лазпушка «Буревестник»</Annihilator_MainCannon.label>
+  <!-- EN: Typically mounted as the twin-linked unit on the Predator Annihilator tanks, the Stormbringer lascannon is a devastating energy weapon known for its ability to unleash a torrent of searing energy capable of obliterating heavily armored targets with pinpoint precision. -->
+  <Annihilator_MainCannon.description>Typically mounted as the twin-linked unit on the Predator Annihilator tanks, the Stormbringer lascannon is a devastating energy weapon known for its ability to unleash a torrent of searing energy capable of obliterating heavily armored targets with pinpoint precision.</Annihilator_MainCannon.description>
+  <!-- EN: Burst -->
+  <Annihilator_MainCannon.fireModes.0.label>стрельба очередями</Annihilator_MainCannon.fireModes.0.label>
+  <!-- EN: Single Shot -->
+  <Annihilator_MainCannon.fireModes.1.label>стрельба одиночными выстрелами</Annihilator_MainCannon.fireModes.1.label>
+</LanguageData>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Select Target.\n\nFire for effect -->
+  <GF40K_LandRaiderRDMR_MainTurret.gizmoDescription>Выбрать цель.\n\nВыстрелить.</GF40K_LandRaiderRDMR_MainTurret.gizmoDescription>
+  <!-- EN: Assault Cannon -->
+  <GF40K_LandRaiderRDMR_MainTurret.label>штурмовая пушка</GF40K_LandRaiderRDMR_MainTurret.label>
+  <!-- EN: The Assault Cannon is a six-barrel, self-loading version of the Autocannon. It's most effective at close range due to its tremendous firing speed, which mows down enemies. However, the cannon is prone to overheating if fired for too long. This version is twin-linked for increased firing speed and firepower, and is usually mounted on heavy tanks. -->
+  <GF40K_LandRaiderRDMR_MainTurret.description>Эта сдвоенная шестиствольная самозарядная версия автопушки наиболее эффективна на близком расстоянии. Она выдаёт умопомрачительную скорострельность и выпускает град снарядов, обеспечивающих разрушительный эффект. Из-за высокой скорострельности это оружие склонно к перегреву при длительном непрерывном использовании. Из-за большого веса и отдачи штурмовая пушка обычно устанавливается на тяжёлые танки.</GF40K_LandRaiderRDMR_MainTurret.description>
+  <!-- EN: Auto -->
+  <GF40K_LandRaiderRDMR_MainTurret.fireModes.0.label>полуавтомат</GF40K_LandRaiderRDMR_MainTurret.fireModes.0.label>
+  <!-- EN: Burst -->
+  <GF40K_LandRaiderRDMR_MainTurret.fireModes.1.label>стрельба очередями</GF40K_LandRaiderRDMR_MainTurret.fireModes.1.label>
+  <!-- EN: Full Auto -->
+  <GF40K_LandRaiderRDMR_MainTurret.fireModes.2.label>автомат</GF40K_LandRaiderRDMR_MainTurret.fireModes.2.label>
+  
+
+  <!-- EN: Select Target.\n\nFire for effect -->
+  <GF40K_LandRaiderRDMR_SideTurretLeft.gizmoDescription>Выбрать цель.\n\nВыстрелить.</GF40K_LandRaiderRDMR_SideTurretLeft.gizmoDescription>
+  <!-- EN: Flamestorm Cannon Left -->
+  <GF40K_LandRaiderRDMR_SideTurretLeft.label>левая огнемётная пушка</GF40K_LandRaiderRDMR_SideTurretLeft.label>
+  <!-- EN: The Flamestorm Cannon is an incredibly powerful flamethrower that unleashes devastating waves of burning promethium onto the enemy, completely nullifying any cover and rendering even the strongest armor completely ineffective. -->
+  <GF40K_LandRaiderRDMR_SideTurretLeft.description>«Огненный Шторм» — это невероятно мощный огнемёт, который извергает на врага смертоносные потоки горящего прометиума, полностью уничтожающие любые укрытия и делающие неэффективной даже самую прочную броню.</GF40K_LandRaiderRDMR_SideTurretLeft.description>
+  <!-- EN: Fire Spew -->
+  <GF40K_LandRaiderRDMR_SideTurretLeft.fireModes.0.label>струя пламени</GF40K_LandRaiderRDMR_SideTurretLeft.fireModes.0.label>
+  
+
+  <!-- EN: Select Target.\n\nFire for effect -->
+  <GF40K_LandRaiderRDMR_SideTurretRight.gizmoDescription>Выбрать цель.\n\nВыстрелить.</GF40K_LandRaiderRDMR_SideTurretRight.gizmoDescription>
+  <!-- EN: Right Flamestorm Cannon -->
+  <GF40K_LandRaiderRDMR_SideTurretRight.label>правая огнемётная пушка</GF40K_LandRaiderRDMR_SideTurretRight.label>
+  <!-- EN: The Flamestorm Cannon is an incredibly powerful flamethrower that unleashes devastating waves of burning promethium onto the enemy, completely nullifying any cover and rendering even the strongest armor completely ineffective. -->
+  <GF40K_LandRaiderRDMR_SideTurretRight.description>«Огненный Шторм» — это невероятно мощный огнемёт, который извергает на врага смертоносные потоки горящего прометиума, полностью уничтожающие любые укрытия и делающие неэффективной даже самую прочную броню.</GF40K_LandRaiderRDMR_SideTurretRight.description>
+  <!-- EN: Fire Spew -->
+  <GF40K_LandRaiderRDMR_SideTurretRight.fireModes.0.label>струя пламени</GF40K_LandRaiderRDMR_SideTurretRight.fireModes.0.label>
+</LanguageData>

@@ -5,7 +5,7 @@
 		<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
 			<defName>GF40K_WhirlwindBluePrint</defName>
 			<label>Whirlwind</label>
-			<description>The Whirlwind is an artillery support vehicle solely used by Adeptus Astartes. It employs the Rhino APC as its chassis and is equipped with a Whirlwind multiple missile launcher. This tank can be loaded with different types of missiles to suit the task at hand, from attacking large concentrations of infantry to remotely laying minefields.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Operator x1\n&lt;color=#ffd75d&gt;Armament:&lt;/color&gt; Whirlwind Multiple Missile Launcher\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+			<description>The Whirlwind is an artillery support vehicle solely used by Adeptus Astartes. It employs the Rhino APC as its chassis and is equipped with a Whirlwind multiple missile launcher. This tank can be loaded with different types of missiles to suit the task at hand, from attacking large concentrations of infantry to remotely laying minefields.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1\n&lt;color=#ffd75d&gt;Armament:&lt;/color&gt; Whirlwind Multiple Missile Launcher\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 			<graphicData>
 				<texPath>Things/Vehicles/Whirlwind/whirlwind</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
@@ -42,7 +42,7 @@
 		<Vehicles.VehicleDef ParentName="BaseVehiclePawn">
 			<defName>GF40K_Whirlwind</defName>
 			<label>Whirlwind</label>
-			<description>The Whirlwind is an artillery support vehicle solely used by Adeptus Astartes. It employs the Rhino APC as its chassis and is equipped with a Whirlwind multiple missile Launcher. This tank can be loaded with different types of missiles to suit the task at hand, from attacking large concentrations of infantry to remotely laying minefields.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Operator x1\n&lt;color=#ffd75d&gt;Armament:&lt;/color&gt; Whirlwind Multiple Missile Launcher\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+			<description>The Whirlwind is an artillery support vehicle solely used by Adeptus Astartes. It employs the Rhino APC as its chassis and is equipped with a Whirlwind multiple missile Launcher. This tank can be loaded with different types of missiles to suit the task at hand, from attacking large concentrations of infantry to remotely laying minefields.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1\n&lt;color=#ffd75d&gt;Armament:&lt;/color&gt; Whirlwind Multiple Missile Launcher\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 			<graphicData>
 				<texPath>Things/Vehicles/Whirlwind/whirlwind</texPath>
 				<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
