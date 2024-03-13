@@ -337,7 +337,7 @@
           <li>ArrowHighVelocity</li>
         </startWickOnDamageTaken>
       </li>
-      <li Class="CompProperties_FleckEmitter">
+      <li Class="CompProperties_FleckEmitter" MayRequire="Ludeon.RimWorld.Biotech">
         <fleck>FlashHollow_Red</fleck>
         <emissionInterval>1000</emissionInterval>
         <!--<soundOnEmission>ActivatorCountdown_Ambience</soundOnEmission>-->

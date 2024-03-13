@@ -43,7 +43,7 @@
     <ResearchProjectDef>
         <defName>GF40K_RhinoBaseResearch</defName>
         <label>Cornu Ferreum</label>
-        <description>Learn how to build the Rhino chassis, which also serves as a weapons platform for other vehicles.</description>
+        <description>Learn how to build the Rhino APC, which also serves as a weapons platform for other vehicles.</description>
         <techLevel>Spacer</techLevel>
         <baseCost>3000</baseCost>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
@@ -77,9 +77,9 @@
     </ResearchProjectDef>
     
     <ResearchProjectDef>
-        <defName>GF40K_AnnihilatorResearch</defName>
+        <defName>GF40K_PredatorResearch</defName>
         <label>Ira Caeli</label>
-        <description>Learn how to build the Predator Annihilator tank.</description>
+        <description>Learn how to build the Predator Annihilator and Destructor tanks.</description>
         <techLevel>Spacer</techLevel>
         <baseCost>4000</baseCost>
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>

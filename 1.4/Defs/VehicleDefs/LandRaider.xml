@@ -562,6 +562,7 @@
 			</modExtensions>
 
 			<magazineCapacity>32</magazineCapacity>
+			<chargePerAmmoCount>2</chargePerAmmoCount>
 			<genericAmmo>true</genericAmmo>
 			<hitFlags>IntendedTarget</hitFlags>
 			<autoSnapTargeting>false</autoSnapTargeting>

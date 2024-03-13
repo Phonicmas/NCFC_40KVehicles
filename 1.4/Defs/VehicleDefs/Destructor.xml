@@ -3,11 +3,11 @@
 <Defs>
 										<!--============BUILDABLE============-->
 		<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
-			<defName>AnnihilatorBluePrint</defName>
-			<label>Predator Annihilator</label>
-			<description>The Predator Annihilator is a variant of the basic Predator Destructor tank used by the Space Marine Chapters. This pattern was first introduced in the 36th Millennium as a dedicated tank killer. The Annihilator is equipped with turret-mounted twin-linked Stormbringer lascannons, as opposed to the basic autocannon of the Predator Destructor.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1\n&lt;color=#ffd75d&gt;Armament: &lt;/color&gt;Stormbringer Cannon\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+			<defName>DestructorBluePrint</defName>
+			<label>Predator Destructor</label>
+			<description>The Predator Destructor, commonly known simply as the "Predator", is the most commonly used main battle tank in the Imperium of Man. This tank is a heavily armed and armored version of the Rhino APC. The most common variant of the Predator utilized by the Space Marines is the Predator Destructor. Its long-barrel Syrtis Pattern Autocannon, also known as the 'Predator Cannon', makes it highly effective against infantry targets.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1\n&lt;color=#ffd75d&gt;Armament: &lt;/color&gt;Autocannon x1, Heavy bolter x2\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 			<graphicData>
-				<texPath>Things/Vehicles/Annihilator/annihilator</texPath>
+				<texPath>Things/Vehicles/Destructor/destructor</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 				<drawSize>(5,5)</drawSize>
 			</graphicData>
@@ -34,25 +34,25 @@
 			<designationCategory>VF_Vehicles</designationCategory>
 			<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
 			<soundBuilt/>
-			<thingToSpawn>Annihilator</thingToSpawn>
+			<thingToSpawn>Destructor</thingToSpawn>
 		</Vehicles.VehicleBuildDef>
 
 		
 										<!--==============PAWN===============-->
 		<Vehicles.VehicleDef ParentName="BaseVehiclePawn">
-			<defName>Annihilator</defName>
-			<label>Predator Annihilator</label>
-			<description>The Predator Annihilator is a variant of the basic Predator Destructor tank used by the Space Marine Chapters. This pattern was first introduced in the 36th Millennium as a dedicated tank killer. The Annihilator is equipped with turret-mounted twin-linked Stormbringer lascannons, as opposed to the basic autocannon of the Predator Destructor.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1\n&lt;color=#ffd75d&gt;Armament: &lt;/color&gt;Stormbringer Cannon\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+			<defName>Destructor</defName>
+			<label>Predator Destructor</label>
+			<description>The Predator Destructor, commonly known simply as the "Predator", is the most commonly used main battle tank in the Imperium of Man. This tank is a heavily armed and armored version of the Rhino APC. The most common variant of the Predator utilized by the Space Marines is the Predator Destructor. Its long-barrel Syrtis Pattern Autocannon, also known as the 'Predator Cannon', makes it highly effective against infantry targets.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1\n&lt;color=#ffd75d&gt;Armament: &lt;/color&gt;Autocannon x1, Heavy bolter x2\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 			<graphicData>
-				<texPath>Things/Vehicles/Annihilator/annihilator</texPath>
+				<texPath>Things/Vehicles/Destructor/destructor</texPath>
 				<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 				<shaderType>CutoutComplexPattern</shaderType>
 				<drawSize>(5,5)</drawSize> 
-				<color>(156, 160, 161)</color>
+				<color>(190, 180, 174)</color>
 			</graphicData>
 
 			<fillPercent>0.5</fillPercent>
-			<buildDef>AnnihilatorBluePrint</buildDef>
+			<buildDef>DestructorBluePrint</buildDef>
 			<size>(3,5)</size> 
 
 			<vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions>
@@ -62,8 +62,8 @@
 			<nameable>true</nameable>
 			
 			<vehicleStats>
-				<Mass>510</Mass>
-				<MoveSpeed>6</MoveSpeed>
+				<Mass>550</Mass>
+				<MoveSpeed>5.85</MoveSpeed>
 				<CargoCapacity>350</CargoCapacity>
 				<RepairRate>0.5</RepairRate>
 			</vehicleStats>
@@ -143,7 +143,8 @@
 						</handlingTypes>
 						<turretIds>
 							<li>mainCannon</li> 
-							<li>boltertop</li> 
+							<li>gunLeft</li> 
+							<li>gunRight</li> 
 						</turretIds>
 						<hitbox>
 							<cells>
@@ -439,112 +440,216 @@
 				<li Class="Vehicles.CompProperties_VehicleTurrets"> 
 					<turrets>
 					<li>
-						<turretDef>Annihilator_MainCannon</turretDef>
+						<turretDef>Destructor_MainCannon</turretDef>
 						<renderProperties>
-							<north>(0, -0.62)</north>
+							<north>(0, -0.5)</north>
 							<south>(0, 1.4)</south>
 							<east>(-0.9, 0.35)</east>
 							<west>(0.9, 0.35)</west>
 						</renderProperties>
 							
-						<gizmoLabel>Stormbringer Cannon</gizmoLabel>
-						
+						<gizmoLabel>Destructor Autocannon</gizmoLabel>
 						<angleRestricted>(0,0)</angleRestricted>
-						<aimPieOffset>(0, 2.1)</aimPieOffset>
-						
+						<aimPieOffset>(0.2, 3)</aimPieOffset>
+						<drawLayer>2</drawLayer>
 						<key>mainCannon</key>
 					</li>
 					<li>
-						<!--Storm Bolter-->
-						<turretDef>GF40K_Rhino_MainTurret</turretDef> 
+						<turretDef>HeavyBolter_left</turretDef>
 						<renderProperties>
-							<north>(0.42, 1.23)</north>
-							<south>(-0.42,-0.27)</south>
-							<east>(0.8,-0.1)</east>
-							<west>(-0.8, 0.69)</west>
+							<north>(-1.67, 0.11)</north>
+							<south>(1.67, 0.7)</south>
+							<east>(-0.35, 1.67)</east>
+							<west>(0.35, -1.05)</west>
 						</renderProperties>
 							
-						<gizmoLabel>Storm Bolter</gizmoLabel>
-						<angleRestricted>(290,70)</angleRestricted>
-						<aimPieOffset>(0, 0.1)</aimPieOffset>
+						<gizmoLabel>Left Heavy Bolter</gizmoLabel>
 						
-						<key>boltertop</key>
-						<!--<parentKey>mainCannon</parentKey>-->
+						<angleRestricted>(265, 8)</angleRestricted>
+						<aimPieOffset>(0, 0.2)</aimPieOffset>
+						<drawLayer>1</drawLayer>
+						<key>gunLeft</key>
 					</li>
+					<li>
+						<turretDef>HeavyBolter_right</turretDef>
+						<renderProperties>
+							<north>(1.67, 0.11)</north>
+							<south>(-1.67, 0.7)</south>
+							<east>(-0.35, -1.05)</east>
+							<west>(0.35, 1.67)</west>
+						</renderProperties>
+							
+						<gizmoLabel>Right Heavy Bolter</gizmoLabel>
+						
+						<angleRestricted>(352, 95)</angleRestricted>
+						<aimPieOffset>(0, 0.2)</aimPieOffset>
+						
+						<key>gunRight</key>
+					</li>
+
 					</turrets>
 				</li>
 			</comps>		
 		</Vehicles.VehicleDef>
 										<!--=============TURRETS=============--> 
 
-		<!--Stormbringer Cannon Projectile-->
+		<!--Autocannon Projectile-->
 		<ThingDef ParentName="BaseBullet"> <!--Add-->
-			<defName>Stormbringer_Projectile</defName>
-			<label>Stormbringer beam</label>
+			<defName>Autocannon_Projectile</defName>
+			<label>Autocannon shell</label>
 			<thingClass>Projectile_Explosive</thingClass>
 			<!--<altitudeLayer>MoteOverhead</altitudeLayer>-->
 			<graphicData>
-				<texPath>Things/Projectiles/Shot_LasCannon</texPath>
+				<texPath>Things/Projectiles/autocannon_shell</texPath>
 				<graphicClass>Graphic_Single</graphicClass>
-				<drawSize>(2,2)</drawSize>
+				<drawSize>(3,3)</drawSize>
 			</graphicData>
 			<projectile>
-				<damageDef>Burn</damageDef>
+				<damageDef>Bomb</damageDef>
 				<damageAmountBase>80</damageAmountBase>
-				<explosionRadius>1.3</explosionRadius>			
+				<explosionRadius>5.5</explosionRadius>			
 				<stoppingPower>2.0</stoppingPower>
-				<speed>120</speed>
-				<soundExplode>Explosion_Rocket</soundExplode>
-				<screenShakeFactor>0.3</screenShakeFactor>
+				<speed>150</speed>
+
+				<soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+				<soundExplode>MortarBomb_Explode</soundExplode>
+				<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+				<soundAmbient>MortarRound_Ambient</soundAmbient>
+
+				<screenShakeFactor>0.6</screenShakeFactor>
 			</projectile>
 		</ThingDef>
 
-		<!--Stormbringer cannon base-->
+		<!--Heavy Bolters use Land Raider projectiles-->
+
+		<!--Autocannonannon base-->
 		<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
-			<defName>Annihilator_MainCannon</defName>
-			<label>Stormbringer cannon</label>
-			<description>Typically mounted as the twin-linked unit on the Predator Annihilator tanks, the Stormbringer lascannon is a devastating energy weapon known for its ability to unleash a torrent of searing energy capable of obliterating heavily armored targets with pinpoint precision.</description>
+			<defName>Destructor_MainCannon</defName>
+			<label>Autocannon</label>
+			<description>Syrtis Pattern Autocannon, which includes an automated ammunition feeder, muzzle flash suppressor, and discharge extractor.</description>
 			<turretType>Rotatable</turretType>
-			<shotSound>GF40K_LascannonShot</shotSound>
-			<reloadSound>GF40K_LascannonReload</reloadSound>
-			<projectile>Stormbringer_Projectile</projectile>
+			<shotSound>GF40K_AutocannonShot</shotSound>
+			<reloadSound>GF40K_AutocannonReload</reloadSound>
+			<projectile>Autocannon_Projectile</projectile>
 
-			<reloadTimer>2.3</reloadTimer>
-			<warmUpTimer>3.3</warmUpTimer>
-			<cooldown> 
-				<heatPerShot>5</heatPerShot>
-				<dissipationRate>0.09</dissipationRate>
-				<dissipationCapMultiplier>0.75</dissipationCapMultiplier>
-			</cooldown>
+			<reloadTimer>1.3</reloadTimer>
+			<warmUpTimer>2.9</warmUpTimer>
 
-			<magazineCapacity>6</magazineCapacity>
+			<magazineCapacity>1</magazineCapacity>
 			<genericAmmo>true</genericAmmo>
-			<chargePerAmmoCount>4</chargePerAmmoCount>
+			<chargePerAmmoCount>10</chargePerAmmoCount>
 			
 			<hitFlags>IntendedTarget</hitFlags>
 			<autoSnapTargeting>false</autoSnapTargeting>
 			<rotationSpeed>0.93</rotationSpeed>
 
-			<projectileOffset>3.45</projectileOffset>
+			<projectileOffset>6</projectileOffset>
 			<projectileShifting>
-				<li>-0.2</li>
 				<li>0.2</li>
 			</projectileShifting>
 
 			<minRange>10</minRange>
-			<maxRange>75</maxRange>
+			<maxRange>64</maxRange>
 		
+			<fireModes>
+				<li>
+					<label>Single shot</label>
+					<shotsPerBurst>1</shotsPerBurst>
+					<ticksBetweenShots>30</ticksBetweenShots>
+					<ticksBetweenBursts>60</ticksBetweenBursts>
+					<spreadRadius>2.3</spreadRadius>
+					<texPath>UI/Gizmos/FireRate_Single</texPath>
+				</li>
+			</fireModes>
+
+			<graphicData>
+				<texPath>Things/Vehicles/Destructor/destructor_cannon</texPath>
+				<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+				<shaderType>CutoutComplexPattern</shaderType>
+				<drawSize>(2,8)</drawSize>
+				<layer>2</layer>
+			</graphicData>
+
+			<!--turret recoil-->
 			<recoil>
-				<distanceTotal>0.01</distanceTotal>
-				<distancePerTick>0.07</distancePerTick>
+				<distanceTotal>0.10</distanceTotal>
+				<distancePerTick>0.05</distancePerTick>
 				<speedMultiplierPostRecoil>1</speedMultiplierPostRecoil>
+			</recoil>
+
+			<graphics>
+				<li>
+					<graphicData>
+						<texPath>Things/Vehicles/Destructor/destructor_cannon_barrel</texPath>
+						<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+						<shaderType>CutoutComplexPattern</shaderType>
+						<drawSize>(1,8)</drawSize>
+						<layer>0</layer>
+					</graphicData>
+			<!--barrel recoil-->
+					<recoil>
+						<distanceTotal>0.32</distanceTotal>
+						<distancePerTick>0.05</distancePerTick>
+						<speedMultiplierPostRecoil>0.2</speedMultiplierPostRecoil>
+					</recoil>
+				</li>	
+			</graphics>
+			<gizmoIconTexPath>Things/Vehicles/Destructor/destructor_cannon_gizmo</gizmoIconTexPath>
+
+			<ammunition>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</ammunition>
+			
+			<motes>
+				<li>
+					<cycles>1</cycles>
+					<moteDef>Mote_CannonPlume</moteDef>
+					<animationType>Reset</animationType>
+				</li>
+			</motes>
+
+		</Vehicles.VehicleTurretDef>
+
+		<!--Left Heavy Bolter Base-->
+		<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+			<defName>HeavyBolter_left</defName>
+			<label>Heavy bolter</label>
+			<description>The Heavy Bolter is a highly effective weapon utilized for anti-infantry and fire support roles. Based on the same principles and technology as the standard bolter, the Heavy Bolter fires larger and more powerful bolts, while also having a greater ammunition capacity and a higher rate of fire.</description>
+			<turretType>Rotatable</turretType>
+			<shotSound>GF40K_TwinbolterShot</shotSound>
+			<reloadSound>GF40K_TwinbolterReload</reloadSound>
+
+			<projectile>GF40K_Twinbolter_projectile</projectile>
+
+			<reloadTimer>2.3</reloadTimer>
+			<warmUpTimer>3.3</warmUpTimer>
+
+			<magazineCapacity>16</magazineCapacity>
+			<genericAmmo>true</genericAmmo>
+			<chargePerAmmoCount>2</chargePerAmmoCount>
+			
+			<hitFlags>IntendedTarget</hitFlags>
+			<autoSnapTargeting>false</autoSnapTargeting>
+			<rotationSpeed>0.89</rotationSpeed>
+
+			<projectileOffset>1.37</projectileOffset>
+
+			<minRange>5</minRange>
+			<maxRange>27</maxRange>
+
+			<recoil>
+				<distanceTotal>0.15</distanceTotal>
+				<distancePerTick>0.05</distancePerTick>
+				<speedMultiplierPostRecoil>0.1</speedMultiplierPostRecoil>
 			</recoil>
 		
 			<fireModes>
 				<li>
-					<shotsPerBurst>6</shotsPerBurst>
-					<ticksBetweenShots>12</ticksBetweenShots>
-					<ticksBetweenBursts>18</ticksBetweenBursts>
+					<shotsPerBurst>8</shotsPerBurst>
+					<ticksBetweenShots>19</ticksBetweenShots>
+					<ticksBetweenBursts>30</ticksBetweenBursts>
 					<spreadRadius>2.3</spreadRadius>
 					<label>Burst</label>
 					<texPath>UI/Gizmos/FireRate_Burst</texPath>
@@ -553,33 +658,93 @@
 					<shotsPerBurst>1</shotsPerBurst>
 					<ticksBetweenShots>1</ticksBetweenShots>
 					<ticksBetweenBursts>30</ticksBetweenBursts>
-					<spreadRadius>1.1</spreadRadius>
+					<spreadRadius>1</spreadRadius>
 					<label>Single Shot</label>
 					<texPath>UI/Gizmos/FireRate_Single</texPath>
 				</li>
 			</fireModes>
 
 			<graphicData>
-				<texPath>Things/Vehicles/Annihilator/annihilator_cannon</texPath>
+				<texPath>Things/Vehicles/Destructor/bolter_L</texPath>
 				<graphicClass>Vehicles.Graphic_Turret</graphicClass>
 				<shaderType>CutoutComplexPattern</shaderType>
-				<drawSize>(5.8,5.8)</drawSize>
+				<drawSize>(3,3.5)</drawSize>
 			</graphicData>
+
 
 			<ammunition>
 				<thingDefs>
-					<li>Chemfuel</li>
+					<li>Steel</li>
 				</thingDefs>
 			</ammunition>
-			
-			<motes>
-				<li>
-					<cycles>1</cycles>
-					<moteDef>GF40K_Mote_LaserFlash</moteDef>
-					<animationType>Reset</animationType>
-				</li>
-			</motes>
 
 		</Vehicles.VehicleTurretDef>
-		<!--Stormbolter base in Rhino-->
+
+		<!--Right Heavy Bolter-->
+		<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+			<defName>HeavyBolter_right</defName>
+			<label>Heavy bolter</label>
+			<description>The Heavy Bolter is a highly effective weapon utilized for anti-infantry and fire support roles. Based on the same principles and technology as the standard bolter, the Heavy Bolter fires larger and more powerful bolts, while also having a greater ammunition capacity and a higher rate of fire.</description>
+			<turretType>Rotatable</turretType>
+			<shotSound>GF40K_TwinbolterShot</shotSound>
+			<reloadSound>GF40K_TwinbolterReload</reloadSound>
+
+			<projectile>GF40K_Twinbolter_projectile</projectile>
+
+			<reloadTimer>2.3</reloadTimer>
+			<warmUpTimer>3.3</warmUpTimer>
+
+			<magazineCapacity>16</magazineCapacity>
+			<genericAmmo>true</genericAmmo>
+			<chargePerAmmoCount>2</chargePerAmmoCount>
+			
+			<hitFlags>IntendedTarget</hitFlags>
+			<autoSnapTargeting>false</autoSnapTargeting>
+			<rotationSpeed>0.93</rotationSpeed>
+
+			<projectileOffset>1.37</projectileOffset>
+
+			<minRange>5</minRange>
+			<maxRange>27</maxRange>
+
+			<recoil>
+				<distanceTotal>0.15</distanceTotal>
+				<distancePerTick>0.05</distancePerTick>
+				<speedMultiplierPostRecoil>0.1</speedMultiplierPostRecoil>
+			</recoil>
+		
+			<fireModes>
+				<li>
+					<shotsPerBurst>8</shotsPerBurst>
+					<ticksBetweenShots>19</ticksBetweenShots>
+					<ticksBetweenBursts>30</ticksBetweenBursts>
+					<spreadRadius>2.3</spreadRadius>
+					<label>Burst</label>
+					<texPath>UI/Gizmos/FireRate_Burst</texPath>
+				</li>
+				<li>
+					<shotsPerBurst>1</shotsPerBurst>
+					<ticksBetweenShots>1</ticksBetweenShots>
+					<ticksBetweenBursts>30</ticksBetweenBursts>
+					<spreadRadius>1</spreadRadius>
+					<label>Single Shot</label>
+					<texPath>UI/Gizmos/FireRate_Single</texPath>
+				</li>
+			</fireModes>
+
+			<graphicData>
+				<texPath>Things/Vehicles/Destructor/bolter_R</texPath>
+				<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+				<shaderType>CutoutComplexPattern</shaderType>
+				<drawSize>(3,3.5)</drawSize>
+			</graphicData>
+
+
+			<ammunition>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</ammunition>
+
+		</Vehicles.VehicleTurretDef>
 </Defs>

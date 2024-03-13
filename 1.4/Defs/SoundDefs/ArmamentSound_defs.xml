@@ -133,6 +133,37 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+												<!--============Autocannon=============-->
+	<SoundDef>
+		<defName>GF40K_AutocannonShot</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>GF40K_HeavyShot2</clipPath>
+					</li>
+				</grains>
+				<volumeRange>40~55</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>GF40K_AutocannonReload</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>GF40K_AutocannonReload</clipPath>
+					</li>
+				</grains>
+				<volumeRange>40~55</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
 											<!--============MinefieldMissile=============-->
 	<SoundDef>
 		<defName>GF40K_MinePlanted</defName>
