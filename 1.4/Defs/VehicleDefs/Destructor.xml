@@ -64,7 +64,7 @@
 			<vehicleStats>
 				<Mass>550</Mass>
 				<MoveSpeed>5.85</MoveSpeed>
-				<CargoCapacity>350</CargoCapacity>
+				<CargoCapacity>354</CargoCapacity>
 				<RepairRate>0.5</RepairRate>
 			</vehicleStats>
 
@@ -506,7 +506,7 @@
 			</graphicData>
 			<projectile>
 				<damageDef>Bomb</damageDef>
-				<damageAmountBase>80</damageAmountBase>
+				<damageAmountBase>63</damageAmountBase>
 				<explosionRadius>5.5</explosionRadius>			
 				<stoppingPower>2.0</stoppingPower>
 				<speed>150</speed>
@@ -537,7 +537,7 @@
 
 			<magazineCapacity>1</magazineCapacity>
 			<genericAmmo>true</genericAmmo>
-			<chargePerAmmoCount>10</chargePerAmmoCount>
+			<chargePerAmmoCount>25</chargePerAmmoCount>
 			
 			<hitFlags>IntendedTarget</hitFlags>
 			<autoSnapTargeting>false</autoSnapTargeting>
