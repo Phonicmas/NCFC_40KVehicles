@@ -5,7 +5,7 @@
 		<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
 			<defName>AnnihilatorBluePrint</defName>
 			<label>Predator Annihilator</label>
-			<description>The Predator Annihilator is a variant of the basic Predator Destructor tank used by the Space Marine Chapters. This pattern was first introduced in the 36th Millennium as a dedicated tank killer. The Annihilator is equipped with turret-mounted twin-linked Stormbringer lascannons, as opposed to the basic autocannon of the Predator Destructor.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1\n&lt;color=#ffd75d&gt;Armament: &lt;/color&gt;Stormbringer Cannon\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+			<description>The Predator Annihilator is a variant of the basic Predator Destructor tank used by the Space Marine Chapters. This pattern was first introduced in the 36th Millennium as a dedicated tank killer. The Annihilator is equipped with turret-mounted twin-linked Stormbringer lascannons, as opposed to the basic autocannon of the Predator Destructor.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1\n&lt;color=#ffd75d&gt;Armament: &lt;/color&gt;Storm Bolter x1, Stormbringer Cannon x1\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 			<graphicData>
 				<texPath>Things/Vehicles/Annihilator/annihilator</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
@@ -42,7 +42,7 @@
 		<Vehicles.VehicleDef ParentName="BaseVehiclePawn">
 			<defName>Annihilator</defName>
 			<label>Predator Annihilator</label>
-			<description>The Predator Annihilator is a variant of the basic Predator Destructor tank used by the Space Marine Chapters. This pattern was first introduced in the 36th Millennium as a dedicated tank killer. The Annihilator is equipped with turret-mounted twin-linked Stormbringer lascannons, as opposed to the basic autocannon of the Predator Destructor.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1\n&lt;color=#ffd75d&gt;Armament: &lt;/color&gt;Stormbringer Cannon\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+			<description>The Predator Annihilator is a variant of the basic Predator Destructor tank used by the Space Marine Chapters. This pattern was first introduced in the 36th Millennium as a dedicated tank killer. The Annihilator is equipped with turret-mounted twin-linked Stormbringer lascannons, as opposed to the basic autocannon of the Predator Destructor.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1\n&lt;color=#ffd75d&gt;Armament: &lt;/color&gt;Storm Bolter x1, Stormbringer Cannon x1\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 			<graphicData>
 				<texPath>Things/Vehicles/Annihilator/annihilator</texPath>
 				<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
