@@ -7,8 +7,8 @@
   
   <!-- EN: Cornu Ferreum -->
   <GF40K_RhinoBaseResearch.label>Cornu Ferreum</GF40K_RhinoBaseResearch.label>
-  <!-- EN: Learn how to build the Rhino chassis, which also serves as a weapons platform for other vehicles. -->
-  <GF40K_RhinoBaseResearch.description>Исследование технологий создания шасси «Носорог» (Rhino) — имперского гусеничного бронетранспортера, который также служит оружейной платформой для других модификаций.</GF40K_RhinoBaseResearch.description>
+  <!-- EN: Learn how to build the Rhino APC, which also serves as a weapons platform for other vehicles. -->
+  <GF40K_RhinoBaseResearch.description>Исследование технологий создания танка «Носорог» (Rhino) — имперского гусеничного бронетранспортера, который также служит оружейной платформой для других модификаций.</GF40K_RhinoBaseResearch.description>
   
   <!-- EN: Ignis Deivos -->
   <GF40K_WhirlwindResearch.label>Ignis Deivos</GF40K_WhirlwindResearch.label>
@@ -16,9 +16,9 @@
   <GF40K_WhirlwindResearch.description>Исследование технологий создания самоходной артиллерийской установки «Вихрь» (Whirlwind).</GF40K_WhirlwindResearch.description>
   
   <!-- EN: Ira Caeli -->
-  <GF40K_AnnihilatorResearch.label>Ira Caeli</GF40K_AnnihilatorResearch.label>
-  <!-- EN: Learn how to build the Predator Annihilator tank. -->
-  <GF40K_AnnihilatorResearch.description>Исследование технологий создания танка «Хищник-Аннигилятор» (Predator Annihilator).</GF40K_AnnihilatorResearch.description>
+  <GF40K_PredatorResearch.label>Ira Caeli</GF40K_PredatorResearch.label>
+  <!-- EN: Learn how to build the Predator Annihilator and Destructor tanks. -->
+  <GF40K_PredatorResearch.description>Исследование технологий создания танков «Хищник-Аннигилятор» (Predator Annihilator) и «Хищник-Разрушитель» (Predator Destructor).</GF40K_PredatorResearch.description>
   
   <!-- EN: Machina Anima -->
   <GF40K_LandRaiderResearch.label>Machina Anima</GF40K_LandRaiderResearch.label>

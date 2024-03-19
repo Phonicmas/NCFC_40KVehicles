@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!-- EN: Predator Destructor -->
+  <DestructorBluePrint.label>«Хищник-Разрушитель»</DestructorBluePrint.label>
+  <!-- EN: The Predator Destructor, commonly known simply as the "Predator", is the most commonly used main battle tank in the Imperium of Man. This tank is a heavily armed and armored version of the Rhino APC. The most common variant of the Predator utilized by the Space Marines is the Predator Destructor. Its long-barrel Syrtis Pattern Autocannon, also known as the 'Predator Cannon', makes it highly effective against infantry targets.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1\n&lt;color=#ffd75d&gt;Armament: &lt;/color&gt;Autocannon x1, Heavy bolter x2\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel -->
+  <DestructorBluePrint.description>Этот тяжеловооруженный и бронированный вариант БТР «Носорог» — самый распространённый тип «Хищника», используемый Адептус Астартес. Он оснащён длинноствольной автопушкой, отличающейся высокой эффективностью против пехоты.\n\n&lt;color=#ffd75d&gt;Экипаж:&lt;/color&gt; Водитель x1, Стрелок x1\n&lt;color=#ffd75d&gt;Вооружение: &lt;/color&gt;Автопушка x1, Тяжёлый болтер x2\n&lt;color=#ffd75d&gt;Тип топлива:&lt;/color&gt; Химтопливо</DestructorBluePrint.description>
+</LanguageData>
