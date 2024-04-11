@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!--PLACEHOLDER LABELS AND DESCRIPTIONS-->
+   <!--<ResearchProjectDef>
+        <defName>GF40K_ImperiumVehicles</defName>
+        <label>Ars Mechanica</label>
+        <description>Core research of the imperial vehicle creation process.\n01000110 01110010 01101111 01101101 00100000 01110100 01101000 01100101 00100000 01110111 01100101 01100001 01101011 01101110 01100101 01110011 01110011 00100000 01101111 01100110 00100000 01110100 01101000 01100101 00100000 01101101 01101001 01101110 01100100 00101100 00100000 01001111 01101101 01101110 01101001 01110011 01110011 01101001 01100001 01101000 00100000 01110011 01100001 01110110 01100101 00100000 01110101 01110011</description>
+        <techLevel>Spacer</techLevel>
+        <baseCost>500</baseCost>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <prerequisites>
+        <li>BiofuelRefining</li>
+        <li>AdvancedFabrication</li>
+        </prerequisites>
+        <requiredResearchFacilities>
+        <li>MultiAnalyzer</li>
+        </requiredResearchFacilities> 
+        <researchViewX>0</researchViewX>
+        <researchViewY>3.5</researchViewY>
+        <tab>GF40K_ResearchTab</tab>
+    </ResearchProjectDef>-->
+
+    <ResearchProjectDef>
+        <defName>GF40K_SpaceMarineVehicles</defName>
+        <label>Vehicula Astartes</label>
+        <description>Core research of the Space Marine vehicles.\n\n"From the rage of the Beast, iron protect us!"</description>
+        <techLevel>Spacer</techLevel>
+        <baseCost>2000</baseCost>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <prerequisites>
+        <!--<li>GF40K_ImperiumVehicles</li>-->
+        <li>BiofuelRefining</li>
+        <li>AdvancedFabrication</li>
+        </prerequisites>
+        <requiredResearchFacilities>
+        <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <researchViewX>0</researchViewX>
+        <researchViewY>3.5</researchViewY>
+        <tab>GF40K_ResearchTab</tab>
+    </ResearchProjectDef>  
+    
+    <ResearchProjectDef>
+        <defName>GF40K_RhinoBaseResearch</defName>
+        <label>Cornu Ferreum</label>
+        <description>Learn how to build the Rhino APC, which also serves as a weapons platform for other vehicles.</description>
+        <techLevel>Spacer</techLevel>
+        <baseCost>3000</baseCost>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <prerequisites>
+        <li>GF40K_SpaceMarineVehicles</li>
+        </prerequisites>
+        <requiredResearchFacilities>
+        <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <researchViewX>2</researchViewX>
+        <researchViewY>3.5</researchViewY>
+        <tab>GF40K_ResearchTab</tab>
+    </ResearchProjectDef> 
+
+     <ResearchProjectDef>
+        <defName>GF40K_WhirlwindResearch</defName>
+        <label>Ignis Deivos</label>
+        <description>Learn how to build the Whirlwind mobile artillery tank.</description>
+        <techLevel>Spacer</techLevel>
+        <baseCost>4000</baseCost>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <prerequisites>
+        <li>GF40K_RhinoBaseResearch</li>
+        </prerequisites>
+        <requiredResearchFacilities>
+        <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <researchViewX>4</researchViewX>
+        <researchViewY>2.8</researchViewY>
+        <tab>GF40K_ResearchTab</tab>
+    </ResearchProjectDef>
+    
+    <ResearchProjectDef>
+        <defName>GF40K_PredatorResearch</defName>
+        <label>Ira Caeli</label>
+        <description>Learn how to build the Predator Annihilator and Destructor tanks.</description>
+        <techLevel>Spacer</techLevel>
+        <baseCost>4000</baseCost>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <prerequisites>
+        <li>GF40K_RhinoBaseResearch</li>
+        </prerequisites>
+        <requiredResearchFacilities>
+        <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <researchViewX>4</researchViewX>
+        <researchViewY>3.5</researchViewY>
+        <tab>GF40K_ResearchTab</tab>
+    </ResearchProjectDef> 
+
+    <ResearchProjectDef>
+        <defName>GF40K_LandRaiderResearch</defName>
+        <label>Machina Anima</label>
+        <description>Learn how to build the Land Raider armored personnel carrier.</description>
+        <techLevel>Spacer</techLevel>
+        <baseCost>9000</baseCost>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <prerequisites>
+        <li>GF40K_SpaceMarineVehicles</li>
+        </prerequisites>
+        <!--<requiredStudied>
+        <li MayRequire="Ludeon.RimWorld.Biotech">GF40K_STCStudiable</li>
+        </requiredStudied>-->
+        <requiredResearchFacilities>
+        <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <!--<techprintCount>1</techprintCount>
+        <techprintCommonality>1</techprintCommonality>
+        <techprintMarketValue>2000</techprintMarketValue>
+        <heldByFactionCategoryTags>
+        <li/>
+        </heldByFactionCategoryTags>-->
+        <researchViewX>5</researchViewX>
+        <researchViewY>4.5</researchViewY>
+        <tab>GF40K_ResearchTab</tab>
+    </ResearchProjectDef> 
+</Defs>

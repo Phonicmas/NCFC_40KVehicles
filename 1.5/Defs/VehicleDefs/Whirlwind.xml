@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+										<!--============BUILDABLE============-->
+		<Vehicles.VehicleBuildDef ParentName="VehicleBaseBuildable">
+			<defName>GF40K_WhirlwindBluePrint</defName>
+			<label>Whirlwind</label>
+			<description>The Whirlwind is an artillery support vehicle solely used by Adeptus Astartes. It employs the Rhino APC as its chassis and is equipped with a Whirlwind multiple missile launcher. This tank can be loaded with different types of missiles to suit the task at hand, from attacking large concentrations of infantry to remotely laying minefields.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1\n&lt;color=#ffd75d&gt;Armament:&lt;/color&gt; Whirlwind Multiple Missile Launcher x1\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+			<graphicData>
+				<texPath>Things/Vehicles/Whirlwind/whirlwind</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>(5,5)</drawSize>
+			</graphicData>
+			
+			<size>(5,5)</size>
+			<statBases>
+				<MaxHitPoints>1200</MaxHitPoints>
+				<WorkToBuild>19500</WorkToBuild>
+				<Flammability>0.1</Flammability>
+			</statBases>
+			
+			<researchPrerequisites>
+				<li>GF40K_WhirlwindResearch</li>
+			</researchPrerequisites>
+			<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+
+			<costList>
+				<Steel>600</Steel>
+				<Plasteel>100</Plasteel>
+				<ComponentIndustrial>18</ComponentIndustrial>
+				<ComponentSpacer>3</ComponentSpacer>
+			</costList>
+
+			<designationCategory>VF_Vehicles</designationCategory>
+			<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+			<soundBuilt/>
+			<thingToSpawn>GF40K_Whirlwind</thingToSpawn>
+		</Vehicles.VehicleBuildDef>
+
+		
+										<!--==============PAWN===============-->
+		<Vehicles.VehicleDef ParentName="BaseVehiclePawn">
+			<defName>GF40K_Whirlwind</defName>
+			<label>Whirlwind</label>
+			<description>The Whirlwind is an artillery support vehicle solely used by Adeptus Astartes. It employs the Rhino APC as its chassis and is equipped with a Whirlwind multiple missile Launcher. This tank can be loaded with different types of missiles to suit the task at hand, from attacking large concentrations of infantry to remotely laying minefields.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1\n&lt;color=#ffd75d&gt;Armament:&lt;/color&gt; Whirlwind Multiple Missile Launcher x1\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+			<graphicData>
+				<texPath>Things/Vehicles/Whirlwind/whirlwind</texPath>
+				<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+				<shaderType>CutoutComplexPattern</shaderType>
+				<drawSize>(5,5)</drawSize> 
+				<color>(146, 137, 131)</color>
+			</graphicData>
+
+			<fillPercent>0.5</fillPercent>
+			<buildDef>GF40K_WhirlwindBluePrint</buildDef>
+			<size>(3,5)</size> 
+
+			<vehicleMovementPermissions>DriverNeeded</vehicleMovementPermissions>
+			<vehicleCategory>Combat</vehicleCategory>
+			<techLevel>Spacer</techLevel>
+			<vehicleType>Land</vehicleType> 
+			<nameable>true</nameable>
+			
+			<vehicleStats>
+				<Mass>550</Mass>
+				<MoveSpeed>5.3</MoveSpeed>
+				<CargoCapacity>350</CargoCapacity>
+				<RepairRate>0.7</RepairRate>
+			</vehicleStats>
+
+			<soundSustainersOnEvent>
+				<li>
+				<start>IgnitionOn</start>
+				<stop>IgnitionOff</stop>
+					<value>GF40K_LandRaiderEngineSustainer</value> 
+				</li>
+			</soundSustainersOnEvent>
+
+			<soundOneShotsOnEvent Inherit = "False">
+				<li>
+					<key>PawnEntered</key>
+					<value>GF40K_Rhino_PawnEntered</value>
+				</li>
+				<li>
+					<key>PawnExited</key>
+					<value>GF40K_Rhino_PawnExited</value>
+				</li>
+				<li>
+					<key>IgnitionOn</key>
+					<value>GF40K_Rhino_IgnitionOn</value>
+				</li>
+				<li>
+					<key>IgnitionOff</key>
+					<value>GF40K_Rhino_IgnitionOff</value>
+				</li>
+			</soundOneShotsOnEvent>
+			
+			<statBases>
+				<ArmorRating_Blunt>0.85</ArmorRating_Blunt>
+				<ArmorRating_Sharp>1.09</ArmorRating_Sharp>
+				<ArmorRating_Heat>1.05</ArmorRating_Heat>
+				<Flammability>0.4</Flammability>
+				<MarketValue>7000</MarketValue>
+			</statBases>
+
+			<race>
+				<baseBodySize>4</baseBodySize>
+			</race>
+
+			<properties>
+				<customRoadCosts AssignDefaults = "0.6"/>
+				<customHillinessCosts>
+					<SmallHills>0.6</SmallHills>
+					<LargeHills>0.9</LargeHills>
+					<Mountainous>2.0</Mountainous>
+				</customHillinessCosts>
+				
+				<vehicleJobLimitations>
+					<li>(RepairVehicle, 3)</li>
+				</vehicleJobLimitations>
+
+				<roles>
+					<li>
+						<key>driver</key>
+						<label>Driver</label>
+						<slots>1</slots>
+						<slotsToOperate>1</slotsToOperate>
+						<handlingTypes>
+							<li>Movement</li>
+						</handlingTypes>
+						<turretIds>
+							<li>mainTurret</li>
+						</turretIds>
+						<hitbox>
+							<cells>
+								<li>(0, 1)</li>
+							</cells>
+						</hitbox>
+					</li>
+					<li>
+						<key>gunner_main</key>
+						<label>Gunner</label>
+						<slots>1</slots>
+						<slotsToOperate>1</slotsToOperate>
+						<handlingTypes>Turret</handlingTypes>
+						<turretIds>
+						<li>mainTurret</li>
+						</turretIds>
+						<hitbox>
+							<cells>
+								<li>(0, 0)</li>
+							</cells>
+						</hitbox>
+					</li>
+				</roles>
+			</properties>
+
+			<components>
+				<li>
+					<key>Engine_1</key>
+					<label>ATCR Engine I</label>
+					<health>120</health>
+					<priorityStatEfficiency>true</priorityStatEfficiency>
+					<depth>Internal</depth>
+					<reactors>
+						<li Class = "Vehicles.Reactor_Explosive">
+							<indicator>VF_Explosive</indicator>
+							<chance>0.10</chance>
+							<radius>3</radius>
+							<damageDef>Burn</damageDef>
+						</li>
+					</reactors>				
+					<hitbox>
+						<cells>
+							<li>(-1, 1)</li>
+						</cells>
+					</hitbox>
+					<categories>
+						<li>MoveSpeed</li>
+					</categories>
+				</li>
+				<li>
+					<key>Engine_2</key>
+					<label>ATCR Engine II</label>
+					<health>120</health>
+					<priorityStatEfficiency>true</priorityStatEfficiency>
+					<depth>Internal</depth>	
+					<reactors>
+						<li Class = "Vehicles.Reactor_Explosive">
+							<indicator>VF_Explosive</indicator>
+							<chance>0.10</chance>
+							<radius>3</radius>
+							<damageDef>Burn</damageDef>
+						</li>
+					</reactors>
+					<hitbox>
+						<cells>
+							<li>(1, 1)</li>
+						</cells>
+					</hitbox>
+					<categories>
+						<li>MoveSpeed</li>
+					</categories>
+				</li>
+				<li>
+					<key>Engine_3</key>
+					<label>ATCR Engine III</label>
+					<health>120</health>
+					<priorityStatEfficiency>true</priorityStatEfficiency>
+					<depth>Internal</depth>	
+					<reactors>
+						<li Class = "Vehicles.Reactor_Explosive">
+							<indicator>VF_Explosive</indicator>
+							<chance>0.10</chance>
+							<radius>3</radius>
+							<damageDef>Burn</damageDef>
+						</li>
+					</reactors>
+					<hitbox>
+						<cells>
+							<li>(-1, -1)</li>
+						</cells>
+					</hitbox>
+					<categories>
+						<li>MoveSpeed</li>
+					</categories>
+				</li>
+				<li>
+					<key>Engine_4</key>
+					<label>ATCR Engine IV</label>
+					<health>120</health>
+					<priorityStatEfficiency>true</priorityStatEfficiency>
+					<depth>Internal</depth>	
+					<reactors>
+						<li Class = "Vehicles.Reactor_Explosive">
+							<indicator>VF_Explosive</indicator>
+							<chance>0.10</chance>
+							<radius>3</radius>
+							<damageDef>Burn</damageDef>
+						</li>
+					</reactors>
+					<hitbox>
+						<cells>
+							<li>(1, -1)</li>
+						</cells>
+					</hitbox>
+					<categories>
+						<li>MoveSpeed</li>
+					</categories>
+				</li>
+				<li>
+					<key>LeftTrack</key>
+					<label>Left Track</label>
+					<health>200</health>
+					<depth>External</depth>				
+					<tags>
+						<li>Wheel</li>
+					</tags>
+					<hitbox>
+						<fallthrough>false</fallthrough>
+						<side>Left</side>
+					</hitbox>
+					<categories>
+						<li>MoveSpeed</li>
+					</categories>
+				</li>
+				<li>
+					<key>RightTrack</key>
+					<label>Right Track</label>
+					<health>200</health>
+					<depth>External</depth>
+					<tags>
+						<li>Wheel</li>
+					</tags>
+					
+					<hitbox>
+						<fallthrough>false</fallthrough>
+						<side>Right</side>
+					</hitbox>
+					<categories>
+						<li>MoveSpeed</li>
+					</categories>
+				</li>
+				<li>
+					<key>FrontLeftDriveSprocket</key>
+					<label>Front Left Drive Sprocket</label>
+					<health>30</health>
+					<depth>External</depth>
+					<tags>
+						<li>Wheel</li>
+					</tags>	
+					<hitbox>
+						<cells>
+							<li>(-1, 2)</li>
+						</cells>
+					</hitbox>
+					
+					<categories>
+						<li>MoveSpeed</li>
+					</categories>
+				</li>
+				<li>
+					<key>FrontRightDriveSprocket</key>
+					<label>Front Right Drive Sprocket</label>
+					<health>30</health>
+					<depth>External</depth>
+					
+					<tags>
+						<li>Wheel</li>
+					</tags>
+					<hitbox>
+						<fallthrough>false</fallthrough>
+						<cells>
+							<li>(1, 2)</li>
+						</cells>
+					</hitbox>
+					<categories>
+						<li>MoveSpeed</li>
+					</categories>
+				</li>
+				<li>
+					<key>BackLeftDriveSprocket</key>
+					<label>Back Left Drive Sprocket</label>
+					<health>25</health>
+					<depth>External</depth>
+					<tags>
+						<li>Wheel</li>
+					</tags>
+					<hitbox>
+						<fallthrough>false</fallthrough>
+						<cells>
+							<li>(-1, -2)</li>
+						</cells>
+					</hitbox>
+					<categories>
+						<li>MoveSpeed</li>
+					</categories>
+				</li>
+				<li>
+					<key>BackRightDriveSprocket</key>
+					<label>Back Right Drive Sprocket</label>
+					<health>25</health>
+					<tags>
+						<li>Wheel</li>
+					</tags>
+					<hitbox>
+						<fallthrough>false</fallthrough>
+						<cells>
+							<li>(1, -2)</li>
+						</cells>
+					</hitbox>
+					<categories>
+						<li>MoveSpeed</li>
+					</categories>
+				</li>
+				<li>
+					<key>Gearbox</key>
+					<label>Gearbox</label>
+					<health>75</health>
+					<depth>Internal</depth>
+					<hitbox>
+						<cells>
+							<li>(0, 1)</li>
+						</cells>
+					</hitbox>
+					<categories>
+						<li>MoveSpeed</li>
+					</categories>
+				</li>		
+				<li>
+					<key>FrontArmorPlating</key>
+					<label>Front Armor Plating</label>
+					<health>300</health>
+					<depth>External</depth>
+					<armor>
+						<ArmorRating_Blunt>1.1</ArmorRating_Blunt>
+						<ArmorRating_Sharp>1.2</ArmorRating_Sharp>
+					</armor>
+					
+					<hitbox>
+						<side>Front</side>
+					</hitbox>
+				</li>
+				<li>
+					<key>LeftArmorPlating</key>
+					<label>Left Armor Plating</label>
+					<health>300</health>
+					<depth>External</depth>
+					
+					<armor>
+						<ArmorRating_Blunt>1</ArmorRating_Blunt>
+						<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+					</armor>
+					
+					<hitbox>
+						<side>Left</side>
+					</hitbox>
+				</li>
+				<li>
+					<key>RightArmorPlating</key>
+					<label>Right Armor Plating</label>
+					<health>300</health>
+					<depth>External</depth>
+					
+					<armor>
+						<ArmorRating_Blunt>1</ArmorRating_Blunt>
+						<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+					</armor>
+					
+					<hitbox>
+						<side>Right</side>
+					</hitbox>
+				</li>
+				<li>
+					<key>BackArmorPlating</key>
+					<label>Rear Armor Plating</label>
+					<health>300</health>
+					<depth>External</depth>
+					<armor>
+						<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+						<ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+					</armor>
+					
+					<hitbox>
+						<side>Back</side>
+					</hitbox>
+				</li>
+				<li>
+					<key>FuelTank</key>
+					<label>Fuel Tanks</label>
+					<health>120</health>
+					<depth>Internal</depth>
+					
+					<reactors>
+						<li Class = "Vehicles.Reactor_FuelLeak">
+							<maxHealth>0.3</maxHealth>
+							<rate>1~4</rate>
+						</li>
+						<li Class = "Vehicles.Reactor_Explosive">
+							<indicator>VF_Explosive</indicator>
+							<chance>0.20</chance>
+							<radius>10</radius>
+							<damageDef>Burn</damageDef>
+						</li>
+					</reactors>
+					<hitbox>
+						<cells>
+							<li>(-1, -1)</li>
+							<li>(1, -1)</li>
+							<li>(1, 1)</li>
+							<li>(-1, 1)</li>
+						</cells>
+					</hitbox>
+				</li>
+				<li>
+					<key>ControlPanel</key>
+					<label>Control Panel</label>
+					<health>55</health>
+					<depth>Internal</depth>
+					<hitWeight>5</hitWeight>
+				</li>
+				<li>
+					<key>SteeringSystem</key>
+					<label>Steering system</label>
+					<health>70</health>
+					<depth>Internal</depth>
+					<hitWeight>5</hitWeight>
+				</li>
+				<li>
+					<key>Roof</key>
+					<label>Roof</label>
+					<health>200</health>
+					<depth>External</depth>
+					<hitWeight>10</hitWeight>
+				</li>
+			</components>
+
+			<comps>
+				<li Class="Vehicles.CompProperties_FueledTravel">
+					<fuelType>Chemfuel</fuelType>
+					<leakDef>Filth_Fuel</leakDef>
+					<fuelConsumptionRate>65</fuelConsumptionRate>
+					<fuelConsumptionWorldMultiplier>1</fuelConsumptionWorldMultiplier>
+					<fuelCapacity>210</fuelCapacity>
+				</li>
+				
+				<li Class="Vehicles.CompProperties_VehicleTurrets"> 
+					<deployTime>8</deployTime>
+					<deploySound>GF40K_WhirlwindDeployed</deploySound>
+					<undeploySound>GF40K_WhirlwindUndeployed</undeploySound>
+					<deployingSustainer>GF40K_WhirlwindDeployLoop</deployingSustainer>
+					
+					<turrets>
+						<li>
+							<turretDef>GF40K_Whirlwind_MainTurret</turretDef>
+							<deployment>Deployed</deployment>
+					
+							<renderProperties>
+								<north>(0,-0.85)</north>
+								<south>(0,1.76)</south>
+								<east>(-1.21,0.39)</east>
+								<west>(1.21,0.46)</west>
+							</renderProperties>
+							<drawLayer>2</drawLayer>
+								
+							<gizmoLabel>Missile Launcher</gizmoLabel>
+							
+							<aimPieOffset>(0,0.3)</aimPieOffset>
+
+							<key>mainTurret</key>
+						</li>
+					</turrets>
+				</li>
+			</comps>		
+		</Vehicles.VehicleDef>
+										<!--=============TURRETS=============--> 
+
+		<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
+			<defName>GF40K_Whirlwind_MainTurret</defName>
+			<label>Whirlwind Missile Launcher</label>
+			<description>The Whirlwind Multiple Missile Launcher is a devastating artillery weapon. This vehicle-mounted system unleashes a storm of guided missiles upon its targets, saturating the battlefield with explosive firepower. Known for its versatility, the Whirlwind can be equipped with different types of warheads, making it equally effective against both infantry and armored units. With its ability to rain down destruction from a safe distance, this unit is a key asset for the Imperium's long-range artillery support in the never-ending war of the 41st millennium.</description>
+			<turretType>Rotatable</turretType>
+			<shotSound>GF40K_Woosh</shotSound>
+			<reloadSound>GF40K_WW_Reload</reloadSound>
+			
+			<reloadTimer>12</reloadTimer>
+			<warmUpTimer>4</warmUpTimer>
+
+			<magazineCapacity>12</magazineCapacity>
+			<chargePerAmmoCount>1</chargePerAmmoCount>
+			<genericAmmo>false</genericAmmo>
+			
+			<hitFlags>IntendedTarget</hitFlags>
+			<autoSnapTargeting>false</autoSnapTargeting>
+			<rotationSpeed>0.30</rotationSpeed>
+			<projectileOffset>2.1</projectileOffset>
+			<projectileShifting>
+			<li>-0.85</li>
+			<li>0.9</li>
+			</projectileShifting>
+			<minRange>25</minRange>
+			<maxRange>130</maxRange>
+
+			<restrictionType>Vehicles.TurretRestrictions_Stationary</restrictionType>
+		
+			<recoil>
+				<distanceTotal>0.15</distanceTotal>
+				<distancePerTick>0.05</distancePerTick>
+				<speedMultiplierPostRecoil>0.1</speedMultiplierPostRecoil>
+			</recoil>
+		
+			<fireModes>
+				<li>
+					<shotsPerBurst>12</shotsPerBurst>
+					<ticksBetweenShots>15</ticksBetweenShots>
+					<ticksBetweenBursts>120</ticksBetweenBursts>
+					<spreadRadius>7</spreadRadius>
+					<label>Barrage</label>
+					<texPath>UI/Gizmos/FireRate_Auto</texPath>
+				</li>
+				<li>
+					<shotsPerBurst>1</shotsPerBurst>
+					<ticksBetweenShots>15</ticksBetweenShots>
+					<ticksBetweenBursts>280</ticksBetweenBursts>
+					<spreadRadius>3.5</spreadRadius>
+					<label>Single</label>
+					<texPath>UI/Gizmos/FireRate_Single</texPath>
+				</li>
+			</fireModes>
+
+			<graphicData>
+				<texPath>Things/Vehicles/Whirlwind/whirlwind_launcher_top</texPath>
+				<graphicClass>Vehicles.Graphic_Turret</graphicClass>
+				<shaderType>CutoutComplexPattern</shaderType>
+				<drawSize>(4,4)</drawSize>
+			</graphicData>
+			<ammunition>
+				<thingDefs>
+					<li>GF40K_HE_Rocket</li>
+					<li>GF40K_INC_Rocket</li>
+					<li>GF40K_Minefield_Rocket</li>
+				</thingDefs>
+			</ammunition>
+			<!--<motes>
+				<li>
+					<cycles>1</cycles>
+					<moteDef>GF40K_Mote_RocketFlash</moteDef>
+					<animationType>Reset</animationType>
+				</li>
+			</motes>-->
+		</Vehicles.VehicleTurretDef>
+</Defs>
