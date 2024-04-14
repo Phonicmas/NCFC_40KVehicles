@@ -573,13 +573,13 @@
 				</thingDefs>
 			</ammunition>
 			
-			<!--<motes>
+			<motes>
 				<li>
 					<cycles>1</cycles>
 					<moteDef>GF40K_Mote_LaserFlash</moteDef>
 					<animationType>Reset</animationType>
 				</li>
-			</motes>-->
+			</motes>
 
 		</Vehicles.VehicleTurretDef>
 		<!--Stormbolter base in Rhino-->

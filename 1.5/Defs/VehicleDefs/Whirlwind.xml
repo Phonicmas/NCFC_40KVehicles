@@ -581,12 +581,12 @@
 					<li>GF40K_Minefield_Rocket</li>
 				</thingDefs>
 			</ammunition>
-			<!--<motes>
+			<motes>
 				<li>
 					<cycles>1</cycles>
 					<moteDef>GF40K_Mote_RocketFlash</moteDef>
 					<animationType>Reset</animationType>
 				</li>
-			</motes>-->
+			</motes>
 		</Vehicles.VehicleTurretDef>
 </Defs>
