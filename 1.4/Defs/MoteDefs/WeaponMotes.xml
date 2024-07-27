@@ -4,11 +4,13 @@
 	<ThingDef ParentName="MoteBase">
 		<defName>GF40K_Mote_LaserFlash</defName>
 		<thingClass>Vehicles.Mote_CannonPlume</thingClass>
+
 		<graphicData>
 			<texPath>Animations/LaserFlash</texPath>
 			<graphicClass>Vehicles.Graphic_Animate</graphicClass>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
+
 		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<mote>
 			<fadeInTime>0</fadeInTime>
@@ -17,14 +19,17 @@
 			<growthRate>0</growthRate>
 		</mote>
 	</ThingDef>
+
 	<ThingDef ParentName="MoteBase">
 		<defName>GF40K_Mote_RocketFlash</defName>
 		<thingClass>Vehicles.Mote_CannonPlume</thingClass>
+
 		<graphicData>
 			<texPath>Animations/RocketFlash</texPath>
 			<graphicClass>Vehicles.Graphic_Animate</graphicClass>
 			<drawSize>(5.5,5.5)</drawSize>
 		</graphicData>
+		
 		<altitudeLayer>MoteOverhead</altitudeLayer>
 		<mote>
 			<fadeInTime>0</fadeInTime>

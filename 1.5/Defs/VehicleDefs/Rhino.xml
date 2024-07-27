@@ -453,8 +453,8 @@
 						<renderProperties>
 							<north>(-0.46, 1.25)</north>
 							<south>(0.47, -0.25)</south>
-							<east>(0.83, 0.69)</east>
-							<west>(-0.83, 0)</west>
+							<east>(0.83, 0.63)</east>
+							<west>(-0.83, -0.15)</west>
 						</renderProperties>
 							
 						<gizmoLabel>Smoke Launcher</gizmoLabel>

@@ -49,6 +49,7 @@
 				<shaderType>CutoutComplexPattern</shaderType>
 				<drawSize>(5,5)</drawSize> 
 				<color>(190, 180, 174)</color>
+				<layer>0</layer>
 			</graphicData>
 
 			<fillPercent>0.5</fillPercent>
