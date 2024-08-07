@@ -312,7 +312,8 @@
   </ThingDef>
 
   <!--Spawned Thing-->
-  <ThingDef ParentName="TrapIEDBase">
+  <ThingDef ParentName="BuildingBase">
+  <thingClass>Building_TrapExplosive</thingClass>
     <defName>GF40K_Whirlwind_landmine</defName>
     <label>Castellan bomblet</label>
     <description>A small mine-like bomblet, commonly found in minefields deployed by a Castellan missile.</description>
@@ -320,6 +321,7 @@
       <texPath>Things/Projectiles/Landmines</texPath>
       <graphicClass>Graphic_Random</graphicClass>
     </graphicData>
+    <tickerType>Normal</tickerType>
     <costList>
       <Steel>2</Steel>
       <Chemfuel>2</Chemfuel>
@@ -340,11 +342,10 @@
       <li Class="CompProperties_FleckEmitter" MayRequire="Ludeon.RimWorld.Biotech">
         <fleck>FlashHollow_Red</fleck>
         <emissionInterval>1000</emissionInterval>
-        <!--<soundOnEmission>ActivatorCountdown_Ambience</soundOnEmission>-->
         <saveKeysPrefix>flash</saveKeysPrefix>
       </li>
     </comps>
-    <specialDisplayRadius>1</specialDisplayRadius>
+    <specialDisplayRadius>0.25</specialDisplayRadius>
     <modExtensions>
       <li Class="GF40K.DefModExtension_SpawnedBuildingFaction"/>
     </modExtensions>
