@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>AmmoWhirlwindRocket</defName>
+		<label>Whirlwind missiles</label>
+		<parent>AmmoRockets</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberRocket</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_WhirlwindRocket</defName>
+		<label>Whirlwind missile</label>
+		<ammoTypes>
+			<Ammo_WhirlwindRocket_HE>Bullet_WhirlwindRocket_HE</Ammo_WhirlwindRocket_HE>
+			<Ammo_WhirlwindRocket_INC>Bullet_WhirlwindRocket_INC</Ammo_WhirlwindRocket_INC>
+			<Ammo_WhirlwindRocket_DEP>Bullet_WhirlwindRocket_DEP</Ammo_WhirlwindRocket_DEP>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="WhirlwindRocketBase" ParentName="MediumAmmoBase" Abstract="True">
+		<description>A high explosive missile containing a proximity fuse and explosive warhead.</description>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting_TableMachining</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoWhirlwindRocket</li>
+		</thingCategories>
+		<stackLimit>24</stackLimit>
+		<cookOffFlashScale>25</cookOffFlashScale>
+		<cookOffSound>MortarBomb_Explode</cookOffSound>
+	</ThingDef>
+
+
+	<CombatExtended.AmmoCategoryDef>
+		<defName>WhirlwindHE</defName>
+		<label>High-explosive missile</label>
+		<labelShort>HE</labelShort>
+		<description>Vengeance missiles are the standard warheads used by the Whirlwind. The Vengeance missile is a high explosive missile containing a proximity fuse, which detonates the missile close to the target, scattering deadly shrapnel over the entire area.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="WhirlwindRocketBase">
+		<defName>Ammo_WhirlwindRocket_HE</defName>
+		<label>Whirlwind missile (Vengeance)</label>
+		<graphicData>
+			<texPath>Shells/GF40KheMissile</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>44.76</MarketValue>
+			<Mass>4.5</Mass>
+			<Bulk>7.07</Bulk>
+		</statBases>
+		<ammoClass>WhirlwindHE</ammoClass>
+		<detonateProjectile>Bullet_WhirlwindRocket_HE</detonateProjectile>
+	</ThingDef>
+
+
+    <CombatExtended.AmmoCategoryDef>
+		<defName>WhirlwindINC</defName>
+		<label>Incendiary missile</label>
+		<labelShort>INC</labelShort>
+		<description>Instead of a fragmentation charge, incendiary Castellan missiles are equipped with a volatile chemical warhead that covers the target area in scorching flames. This type of a missile is commonly used against enemies inside structures that are protected from fragmentation blasts. Even if the enemies inside the attacked structure are not burned to death, most will succumb to the after vapors, which kill them from the inside out.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="WhirlwindRocketBase">
+		<defName>Ammo_WhirlwindRocket_INC</defName>
+		<label>Whirlwind missile (Incendiary Castellan)</label>
+		<graphicData>
+			<texPath>Shells/GF40KincMissile</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>41.3</MarketValue>
+			<Mass>4.3</Mass>
+			<Bulk>7.07</Bulk>
+		</statBases>
+		<ammoClass>WhirlwindINC</ammoClass>
+		<detonateProjectile>Bullet_WhirlwindRocket_INC</detonateProjectile>
+	</ThingDef>
+
+    <CombatExtended.AmmoCategoryDef>
+		<defName>WhirlwindDEP</defName>
+		<label>Deployer missile</label>
+		<labelShort>Deployer</labelShort>
+		<description>Castellan Missiles are defensive projectiles equipped with a unique warhead that scatters small bomblets across a designated target area. This allows Imperial forces to establish makeshift minefields rapidly and without exposing themselves to unnecessary danger.</description>
+	</CombatExtended.AmmoCategoryDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="WhirlwindRocketBase">
+		<defName>Ammo_WhirlwindRocket_DEP</defName>
+		<label>Whirlwind missile (Castellan)</label>
+		<graphicData>
+			<texPath>Shells/GF40KmineMissile</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<statBases>
+			<MarketValue>48.3</MarketValue>
+			<Mass>4.3</Mass>
+			<Bulk>7.07</Bulk>
+		</statBases>
+		<ammoClass>WhirlwindDEP</ammoClass>
+		<detonateProjectile>Bullet_WhirlwindRocket_DEP</detonateProjectile>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Name="BaseWhirlwindRocket" ParentName="BaseExplosiveBullet" Abstract="true">
+		<graphicData>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<speed>0</speed>
+			<soundAmbient>RocketPropelledLoop_Small</soundAmbient>
+			<soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+			<dropsCasings>false</dropsCasings>
+			<flyOverhead>true</flyOverhead>
+			<gravityFactor>5</gravityFactor>
+			<shellingProps>
+				<iconPath>Things/WorldObjects/Munitions/Rocket</iconPath>
+				<tilesPerTick>0.35</tilesPerTick>
+				<range>12</range>
+				<damage>0.43</damage>
+			</shellingProps>
+			
+		</projectile>
+	</ThingDef>
+
+    <!-- HE -->
+	<ThingDef ParentName="BaseWhirlwindRocket">
+		<defName>Bullet_WhirlwindRocket_HE</defName>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<label>Whirlwind missile (Vengeance)</label>
+		<graphicData>
+			<texPath>Things/Projectiles/GF40K_HE_rocket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>147</damageAmountBase>
+			<explosionRadius>2.8</explosionRadius>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+                    <!-- <Fragment_Large>15</Fragment_Large> -->
+					<!-- <Fragment_Small>24</Fragment_Small> -->
+					<Fragment_Small>24</Fragment_Small>
+				</fragments>
+			</li>
+			<li Class="CombatExtended.CompProperties_ProjectileFleck">
+				<FleckDatas>
+					<li>
+						<fleck>Fleck_CERocketFlame</fleck>
+						<emissionsPerTick>7</emissionsPerTick>
+						<flecksPerEmission>3</flecksPerEmission>
+						<cutoffTickRange>60~120</cutoffTickRange>
+					</li>
+					<li>
+						<fleck>Fleck_CERocketSmokeTrail</fleck>
+						<emissionsPerTick>0.5</emissionsPerTick>
+						<rotation>0~360</rotation>
+						<scale>2</scale>
+						<flecksPerEmission>1</flecksPerEmission>
+					</li>
+					<li>
+						<fleck>Fleck_CERocketSmoke</fleck>
+						<emissionsPerTick>0.5</emissionsPerTick>
+						<rotation>0~360</rotation>
+						<flecksPerEmission>1</flecksPerEmission>
+						<cutoffTickRange>120~240</cutoffTickRange>
+					</li>
+				</FleckDatas>
+			</li>
+		</comps>
+	</ThingDef>
+
+    <!-- INC -->
+	<ThingDef ParentName="BaseWhirlwindRocket">
+		<defName>Bullet_WhirlwindRocket_INC</defName>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<label>Whirlwind missile (Incendiary Castellan)</label>
+		<graphicData>
+			<texPath>Things/Projectiles/GF40K_INC_rocket</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Flame</damageDef>
+			<damageAmountBase>43</damageAmountBase>
+			<explosionRadius>3.5</explosionRadius>
+			<preExplosionSpawnChance>0.4</preExplosionSpawnChance>
+			<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+			<postExplosionSpawnThingDef MayRequire="Ludeon.RimWorld.Biotech">GF40K_Thing_ToxGasRelease</postExplosionSpawnThingDef>
+            <postExplosionSpawnChance>0.6</postExplosionSpawnChance>
+            <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ProjectileFleck">
+				<FleckDatas>
+					<li>
+						<fleck>Fleck_CERocketFlame</fleck>
+						<emissionsPerTick>7</emissionsPerTick>
+						<flecksPerEmission>3</flecksPerEmission>
+						<cutoffTickRange>60~120</cutoffTickRange>
+					</li>
+					<li>
+						<fleck>Fleck_CERocketSmokeTrail</fleck>
+						<emissionsPerTick>0.5</emissionsPerTick>
+						<rotation>0~360</rotation>
+						<scale>2</scale>
+						<flecksPerEmission>1</flecksPerEmission>
+					</li>
+					<li>
+						<fleck>Fleck_CERocketSmoke</fleck>
+						<emissionsPerTick>0.5</emissionsPerTick>
+						<rotation>0~360</rotation>
+						<flecksPerEmission>1</flecksPerEmission>
+						<cutoffTickRange>120~240</cutoffTickRange>
+					</li>
+				</FleckDatas>
+			</li>
+		</comps>
+	</ThingDef>
+
+    <ThingDef MayRequire="Ludeon.RimWorld.Biotech">
+        <defName>GF40K_Thing_ToxGasRelease</defName>
+        <label>puddle of volatile chemicals</label>
+        <selectable>false</selectable>
+        <tickerType>Normal</tickerType>
+        <thingClass>ThingWithComps</thingClass>
+        <useHitPoints>false</useHitPoints>
+        <rotatable>false</rotatable>
+        <comps>
+        <li Class="CompProperties_ReleaseGas">
+            <gasType>ToxGas</gasType>
+            <cellsToFill>1</cellsToFill>
+            <durationSeconds>45</durationSeconds>
+        </li>
+        <li Class="CompProperties_DestroyAfterDelay">
+            <delayTicks>3600</delayTicks>
+        </li>
+        </comps>
+        <graphicData>
+        <graphicClass>Graphic_Random</graphicClass>
+        <shaderType>Transparent</shaderType>
+        <texPath>Things/Filth/FlammableBile</texPath>
+        </graphicData>
+    </ThingDef>
+
+    <!-- DEPLOYER -->
+	<ThingDef ParentName="BaseBulletCE">
+		<defName>Bullet_WhirlwindRocket_DEP</defName>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<label>Whirlwind missile (Castellan)</label>
+		<graphicData>
+			<texPath>Things/Projectiles/landmine_airborne</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+            <damageDef>Smoke</damageDef>
+			<speed>0</speed>
+			<dropsCasings>false</dropsCasings>
+			<flyOverhead>true</flyOverhead>
+			<gravityFactor>5</gravityFactor>
+
+			<shellingProps>
+				<iconPath>Things/WorldObjects/Munitions/Rocket</iconPath>
+				<tilesPerTick>0.35</tilesPerTick>
+				<range>12</range> 
+				<damage>0</damage>
+			</shellingProps>
+
+            <damageAmountBase>0</damageAmountBase>
+            <explosionRadius>0.25</explosionRadius>
+            <postExplosionSpawnThingDef>GF40K_Whirlwind_landmine</postExplosionSpawnThingDef>
+			<postExplosionSpawnChance>1</postExplosionSpawnChance>
+            <postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+            <applyDamageToExplosionCellsNeighbors>false</applyDamageToExplosionCellsNeighbors>
+
+            <soundExplode>GF40K_MinePlanted</soundExplode> 
+            <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
+            <soundAmbient>RocketPropelledLoop_Small</soundAmbient>
+            <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ProjectileFleck">
+				<FleckDatas>
+					<li>
+						<fleck>Fleck_CERocketFlame</fleck>
+						<emissionsPerTick>7</emissionsPerTick>
+						<flecksPerEmission>3</flecksPerEmission>
+						<cutoffTickRange>60~120</cutoffTickRange>
+					</li>
+					<li>
+						<fleck>Fleck_CERocketSmokeTrail</fleck>
+						<emissionsPerTick>0.5</emissionsPerTick>
+						<rotation>0~360</rotation>
+						<scale>2</scale>
+						<flecksPerEmission>1</flecksPerEmission>
+					</li>
+					<li>
+						<fleck>Fleck_CERocketSmoke</fleck>
+						<emissionsPerTick>0.5</emissionsPerTick>
+						<rotation>0~360</rotation>
+						<flecksPerEmission>1</flecksPerEmission>
+						<cutoffTickRange>120~240</cutoffTickRange>
+					</li>
+				</FleckDatas>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<thingClass>Building_TrapExplosive</thingClass>
+		<defName>GF40K_Whirlwind_landmine</defName>
+		<label>Castellan bomblet</label>
+		<description>A small mine-like bomblet, commonly found in minefields deployed by a Castellan missile.</description>
+		<graphicData>
+		<texPath>Things/Projectiles/Landmines</texPath>
+		<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<costList>
+		<Steel>2</Steel>
+		<Chemfuel>2</Chemfuel>
+		</costList>
+		<comps>
+		<li Class="CompProperties_Explosive">
+			<explosiveRadius>0.25</explosiveRadius>
+			<explosiveDamageType>Bomb</explosiveDamageType>
+			<chanceNeverExplodeFromDamage>1</chanceNeverExplodeFromDamage>
+			<startWickHitPointsPercent>0.2</startWickHitPointsPercent>
+			<wickTicks>1</wickTicks>
+			<startWickOnDamageTaken>
+			<li>Bullet</li>
+			<li>Arrow</li>
+			<li>ArrowHighVelocity</li>
+			</startWickOnDamageTaken>
+		</li>
+		<li Class="CompProperties_FleckEmitter" MayRequire="Ludeon.RimWorld.Biotech">
+			<fleck>FlashHollow_Red</fleck>
+			<emissionInterval>1000</emissionInterval>
+			<saveKeysPrefix>flash</saveKeysPrefix>
+		</li>
+		</comps>
+		<specialDisplayRadius>0</specialDisplayRadius>
+		<modExtensions>
+		<li Class="GF40K.DefModExtension_SpawnedBuildingFaction"/>
+		</modExtensions>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="LauncherAmmoRecipeBase">
+		<defName>MakeAmmo_WhirlwindRocket_HE</defName>
+		<label>make Whirlwind (HE) missiles x12</label>
+		<description>Craft 12 Whirlwind (HE) missiles.</description>
+		<jobString>Making Whirlwind (HE) missiles.</jobString>
+		<workAmount>13200</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>55</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_WhirlwindRocket_HE>12</Ammo_WhirlwindRocket_HE>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="LauncherAmmoRecipeBase">
+		<defName>MakeAmmo_WhirlwindRocket_INC</defName>
+		<label>make Whirlwind (INC) missiles x12</label>
+		<description>Craft 12 Whirlwind (INC) missiles.</description>
+		<jobString>Making Whirlwind (INC) missiles.</jobString>
+		<workAmount>13860</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>38</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>16</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_WhirlwindRocket_INC>12</Ammo_WhirlwindRocket_INC>
+		</products>
+	</RecipeDef>
+
+	<RecipeDef ParentName="LauncherAmmoRecipeBase">
+		<defName>MakeAmmo_WhirlwindRocket_DEP</defName>
+		<label>make Whirlwind (DEP) missiles x12</label>
+		<description>Craft 12 Whirlwind (DEP) missiles.</description>
+		<jobString>Making Whirlwind (DEP) missiles.</jobString>
+		<workAmount>15840</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>45</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_WhirlwindRocket_DEP>12</Ammo_WhirlwindRocket_DEP>
+		</products>
+	</RecipeDef>
+
+</Defs>

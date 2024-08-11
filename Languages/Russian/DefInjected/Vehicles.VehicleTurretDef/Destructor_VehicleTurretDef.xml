@@ -7,8 +7,6 @@
   <Destructor_MainCannon.label>автопушка</Destructor_MainCannon.label>
   <!-- EN: Syrtis Pattern Autocannon, which includes an automated ammunition feeder, muzzle flash suppressor, and discharge extractor. -->
   <Destructor_MainCannon.description>Скорострельное орудие, близкое по строению к тяжёлым стабберам, однако ведущее огонь крупнокалиберными снарядами бронебойно-разрывного действия.</Destructor_MainCannon.description>
-  <!-- EN: Single shot -->
-  <Destructor_MainCannon.fireModes.0.label>стрельба одиночными выстрелами</Destructor_MainCannon.fireModes.0.label>
   
   
   <!-- EN: Select Target.\n\nFire for effect -->

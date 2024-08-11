@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  
+  <!-- EN: Whirlwind -->
+  <GF40K_Whirlwind.label>«Вихрь»</GF40K_Whirlwind.label>
+  <!-- EN: The Whirlwind is an artillery support vehicle solely used by Adeptus Astartes. It employs the Rhino APC as its chassis and is equipped with a Whirlwind multiple missile Launcher. This tank can be loaded with different types of missiles to suit the task at hand, from attacking large concentrations of infantry to remotely laying minefields.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1\n&lt;color=#ffd75d&gt;Armament:&lt;/color&gt; Whirlwind Multiple Missile Launcher x1\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel\n\nThe armament of this vehicle can be equipped with the following types of ammunition: -->
+  <GF40K_Whirlwind.description>«Вихрь» — это машина артиллерийской поддержки, используемая исключительно Адептус Астартес. Он был спроектирован на базе транспорта «Носорог» и представляет собой легкобронированный танк, оснащённый несколькими ракетными залповыми установками, способными прицельно обстреливать вражеские позиции. В зависимости от поставленной задачи, «Вихрь» может вести огонь различными снарядами: ракетами «Возмездие», зажигательными снарядами и ракетами-развёртывателями «Кастелян», что обеспечит максимальную эффективность как при атаке на большие скопления пехоты, так и при дистанционной постановке минных полей.\n\n&lt;color=#ffd75d&gt;Экипаж:&lt;/color&gt; Водитель x1, Стрелок x1\n&lt;color=#ffd75d&gt;Вооружение:&lt;/color&gt; Ракетная залповая установка x1\n&lt;color=#ffd75d&gt;Тип топлива:&lt;/color&gt; Химтопливо\n\nВооружение этого ТС может использовать следующие типы боеприпасов:</GF40K_Whirlwind.description>
+
+  <!-- EN: Driver -->
+  <GF40K_Whirlwind.properties.roles.0.label>Водитель</GF40K_Whirlwind.properties.roles.0.label>
+  <!-- EN: Gunner -->
+  <GF40K_Whirlwind.properties.roles.1.label>Стрелок</GF40K_Whirlwind.properties.roles.1.label>
+  <!-- EN: ATCR Engine I -->
+  <GF40K_Whirlwind.components.0.label>Двигатель I</GF40K_Whirlwind.components.0.label>
+  <!-- EN: ATCR Engine II -->
+  <GF40K_Whirlwind.components.1.label>Двигатель II</GF40K_Whirlwind.components.1.label>
+  <!-- EN: ATCR Engine III -->
+  <GF40K_Whirlwind.components.2.label>Двигатель III</GF40K_Whirlwind.components.2.label>
+  <!-- EN: ATCR Engine IV -->
+  <GF40K_Whirlwind.components.3.label>Двигатель IV</GF40K_Whirlwind.components.3.label>
+  <!-- EN: Left Track -->
+  <GF40K_Whirlwind.components.4.label>Левая гусеничная цепь</GF40K_Whirlwind.components.4.label>
+  <!-- EN: Right Track -->
+  <GF40K_Whirlwind.components.5.label>Правая гусеничная цепь</GF40K_Whirlwind.components.5.label>
+  <!-- EN: Front Left Drive Sprocket -->
+  <GF40K_Whirlwind.components.6.label>Левое направляющее колесо</GF40K_Whirlwind.components.6.label>
+  <!-- EN: Front Right Drive Sprocket -->
+  <GF40K_Whirlwind.components.7.label>Правое направляющее колесо</GF40K_Whirlwind.components.7.label>
+  <!-- EN: Back Left Drive Sprocket -->
+  <GF40K_Whirlwind.components.8.label>Левый ведущий каток</GF40K_Whirlwind.components.8.label>
+  <!-- EN: Back Right Drive Sprocket -->
+  <GF40K_Whirlwind.components.9.label>Правый ведущий каток</GF40K_Whirlwind.components.9.label>
+  <!-- EN: Gearbox -->
+  <GF40K_Whirlwind.components.10.label>Коробка передач</GF40K_Whirlwind.components.10.label>
+  <!-- EN: Front Armor Plating -->
+  <GF40K_Whirlwind.components.11.label>Передняя бронепанель</GF40K_Whirlwind.components.11.label>
+  <!-- EN: Left Armor Plating -->
+  <GF40K_Whirlwind.components.12.label>Левая бронепанель</GF40K_Whirlwind.components.12.label>
+  <!-- EN: Right Armor Plating -->
+  <GF40K_Whirlwind.components.13.label>Правая бронепанель</GF40K_Whirlwind.components.13.label>
+  <!-- EN: Rear Armor Plating -->
+  <GF40K_Whirlwind.components.14.label>Задняя бронепанель</GF40K_Whirlwind.components.14.label>
+  <!-- EN: Fuel Tanks -->
+  <GF40K_Whirlwind.components.15.label>Топливные баки</GF40K_Whirlwind.components.15.label>
+  <!-- EN: Control Panel -->
+  <GF40K_Whirlwind.components.16.label>Приборная панель</GF40K_Whirlwind.components.16.label>
+  <!-- EN: Steering system -->
+  <GF40K_Whirlwind.components.17.label>Рулевое устройство</GF40K_Whirlwind.components.17.label>
+  <!-- EN: Roof -->
+  <GF40K_Whirlwind.components.18.label>Крыша</GF40K_Whirlwind.components.18.label>
+  
+  <!-- EN: Missile Launcher -->
+  <GF40K_Whirlwind.comps.CompVehicleTurrets.turrets.0.gizmoLabel>Ракетный комплекс</GF40K_Whirlwind.comps.CompVehicleTurrets.turrets.0.gizmoLabel>
+  
+</LanguageData>

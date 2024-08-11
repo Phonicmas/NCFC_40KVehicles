@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Tempest -->
+  <Tempest.label>болт «Буря»</Tempest.label>
+  <!-- EN: Tempest -->
+  <Tempest.labelShort>«Буря»</Tempest.labelShort>
+  <!-- EN: A gyro-stabilized projectile equipped with EMP charge particularly effective at incapacitating machines and other electronic devices. -->
+  <Tempest.description>Гиростабилизированный снаряд, оснащённый ЭМИ-зарядом, эффективно выводящим из строя машины и другие электронные устройства.</Tempest.description>
+  
+</LanguageData>

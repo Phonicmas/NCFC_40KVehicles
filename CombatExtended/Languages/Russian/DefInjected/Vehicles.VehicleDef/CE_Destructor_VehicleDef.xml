@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: Predator Destructor -->
+  <Destructor.label>«Хищник-Разрушитель»</Destructor.label>
+  <!-- EN: The Predator Destructor, commonly known simply as the "Predator", is the most commonly used main battle tank in the Imperium of Man. This tank is a heavily armed and armored version of the Rhino APC. The most common variant of the Predator utilized by the Space Marines is the Predator Destructor. Its long-barrel Syrtis Pattern Autocannon, also known as the 'Predator Cannon', makes it highly effective against infantry targets.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1\n&lt;color=#ffd75d&gt;Armament: &lt;/color&gt;Autocannon x1, Heavy bolter x2\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel\n\nThe armament of this vehicle can be equipped with the following types of ammunition: -->
+  <Destructor.description>Этот тяжеловооруженный и бронированный вариант БТР «Носорог» — самый распространённый тип «Хищника», используемый Адептус Астартес. Он оснащён длинноствольной автопушкой, отличающейся высокой эффективностью против пехоты.\n\n&lt;color=#ffd75d&gt;Экипаж:&lt;/color&gt; Водитель x1, Стрелок x1\n&lt;color=#ffd75d&gt;Вооружение: &lt;/color&gt;Автопушка x1, Тяжёлый болтер x2\n&lt;color=#ffd75d&gt;Тип топлива:&lt;/color&gt; Химтопливо\n\nВооружение этого ТС может использовать следующие типы боеприпасов:</Destructor.description>
+
+  <!-- EN: Driver -->
+  <Destructor.properties.roles.0.label>Водитель</Destructor.properties.roles.0.label>
+  <!-- EN: Gunner -->
+  <Destructor.properties.roles.1.label>Стрелок</Destructor.properties.roles.1.label>
+  <!-- EN: ATCR Engine I -->
+  <Destructor.components.0.label>Двигатель I</Destructor.components.0.label>
+  <!-- EN: ATCR Engine II -->
+  <Destructor.components.1.label>Двигатель II</Destructor.components.1.label>
+  <!-- EN: Left Track -->
+  <Destructor.components.2.label>Левая гусеничная цепь</Destructor.components.2.label>
+  <!-- EN: Right Track -->
+  <Destructor.components.3.label>Правая гусеничная цепь</Destructor.components.3.label>
+  <!-- EN: Front Left Drive Sprocket -->
+  <Destructor.components.4.label>Левое направляющее колесо</Destructor.components.4.label>
+  <!-- EN: Front Right Drive Sprocket -->
+  <Destructor.components.5.label>Правое направляющее колесо</Destructor.components.5.label>
+  <!-- EN: Back Left Drive Sprocket -->
+  <Destructor.components.6.label>Левый ведущий каток</Destructor.components.6.label>
+  <!-- EN: Back Right Drive Sprocket -->
+  <Destructor.components.7.label>Правый ведущий каток</Destructor.components.7.label>
+  <!-- EN: Gearbox -->
+  <Destructor.components.8.label>Коробка передач</Destructor.components.8.label>
+  <!-- EN: Front Armor Plating -->
+  <Destructor.components.9.label>Передняя бронепанель</Destructor.components.9.label>
+  <!-- EN: Left Armor Plating -->
+  <Destructor.components.10.label>Левая бронепанель</Destructor.components.10.label>
+  <!-- EN: Right Armor Plating -->
+  <Destructor.components.11.label>Правая бронепанель</Destructor.components.11.label>
+  <!-- EN: Rear Armor Plating -->
+  <Destructor.components.12.label>Задняя бронепанель</Destructor.components.12.label>
+  <!-- EN: Fuel Tanks -->
+  <Destructor.components.13.label>Топливные баки</Destructor.components.13.label>
+  <!-- EN: Control Panel -->
+  <Destructor.components.14.label>Приборная панель</Destructor.components.14.label>
+  <!-- EN: Steering system -->
+  <Destructor.components.15.label>Рулевое устройство</Destructor.components.15.label>
+  <!-- EN: Roof -->
+  <Destructor.components.16.label>Крыша</Destructor.components.16.label>
+  
+  <!-- EN: Destructor Autocannon -->
+  <Destructor.comps.CompVehicleTurrets.turrets.0.gizmoLabel>Автопушка</Destructor.comps.CompVehicleTurrets.turrets.0.gizmoLabel>
+  <!-- EN: Left Heavy Bolter -->
+  <Destructor.comps.CompVehicleTurrets.turrets.1.gizmoLabel>Левый тяжёлый болтер</Destructor.comps.CompVehicleTurrets.turrets.1.gizmoLabel>
+  <!-- EN: Right Heavy Bolter -->
+  <Destructor.comps.CompVehicleTurrets.turrets.2.gizmoLabel>Правый тяжёлый болтер</Destructor.comps.CompVehicleTurrets.turrets.2.gizmoLabel>
+  
+</LanguageData>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: make .998 Cal Vehicle Bolter (standard) shell x200 -->
+  <MakeAmmo_NCFCBolter998_Standard.label>изготовить танковые снаряды 0.998 (Стандарт) x200</MakeAmmo_NCFCBolter998_Standard.label>
+  <!-- EN: Craft 200 .998 Cal Vehicle Bolter (standard) shells. -->
+  <MakeAmmo_NCFCBolter998_Standard.description>Изготовить 200 танковых снарядов 0.998 калибра (Стандарт).</MakeAmmo_NCFCBolter998_Standard.description>
+  <!-- EN: Making .998 Cal Vehicle Bolter (standard) shells. -->
+  <MakeAmmo_NCFCBolter998_Standard.jobString>Изготавливает танковые снаряды 0.998 (Стандарт)</MakeAmmo_NCFCBolter998_Standard.jobString>
+  
+  <!-- EN: make .998 Cal Vehicle Bolter (inferno) shell x200 -->
+  <MakeAmmo_NCFCBolter998_Inferno.label>изготовить танковые снаряды 0.998 (Инферно) x200</MakeAmmo_NCFCBolter998_Inferno.label>
+  <!-- EN: Craft 200 .998 Cal Vehicle Bolter (inferno) shells. -->
+  <MakeAmmo_NCFCBolter998_Inferno.description>Изготовить 200 танковых снарядов 0.998 калибра (Инферно).</MakeAmmo_NCFCBolter998_Inferno.description>
+  <!-- EN: Making .998 Cal Vehicle Bolter (inferno) shells. -->
+  <MakeAmmo_NCFCBolter998_Inferno.jobString>Изготавливает танковые снаряды 0.998 (Инферно)</MakeAmmo_NCFCBolter998_Inferno.jobString>
+  
+  <!-- EN: make .998 Cal Vehicle Bolter (metal storm) shell x200 -->
+  <MakeAmmo_NCFCBolter998_MetalStorm.label>изготовить танковые снаряды 0.998 (Стальной шторм) x200</MakeAmmo_NCFCBolter998_MetalStorm.label>
+  <!-- EN: Craft 200 .998 Cal Vehicle Bolter (metal storm) shells. -->
+  <MakeAmmo_NCFCBolter998_MetalStorm.description>Изготовить 200 танковых снарядов 0.998 калибра (Стальной шторм).</MakeAmmo_NCFCBolter998_MetalStorm.description>
+  <!-- EN: Making .998 Cal Vehicle Bolter (metal storm) shells. -->
+  <MakeAmmo_NCFCBolter998_MetalStorm.jobString>Изготавливает танковые снаряды 0.998 (Стальной шторм)</MakeAmmo_NCFCBolter998_MetalStorm.jobString>
+  
+  <!-- EN: make .998 Cal Vehicle Bolter (kraken) shell x200 -->
+  <MakeAmmo_NCFCBolter998_Kraken.label>изготовить танковые снаряды 0.998 (Кракен) x200</MakeAmmo_NCFCBolter998_Kraken.label>
+  <!-- EN: Craft 200 .998 Cal Vehicle Bolter (kraken) shells. -->
+  <MakeAmmo_NCFCBolter998_Kraken.description>Изготовить 200 танковых снарядов 0.998 калибра (Кракен).</MakeAmmo_NCFCBolter998_Kraken.description>
+  <!-- EN: Making .998 Cal Vehicle Bolter (kraken) shells. -->
+  <MakeAmmo_NCFCBolter998_Kraken.jobString>Изготавливает танковые снаряды 0.998 (Кракен)</MakeAmmo_NCFCBolter998_Kraken.jobString>
+  
+  <!-- EN: make .998 Cal Vehicle Bolter (tempest) shell x200 -->
+  <MakeAmmo_NCFCBolter998_Tempest.label>изготовить танковые снаряды 0.998 (Буря) x200</MakeAmmo_NCFCBolter998_Tempest.label>
+  <!-- EN: Craft 200 .998 Cal Vehicle Bolter (tempest) shells. -->
+  <MakeAmmo_NCFCBolter998_Tempest.description>Изготовить 200 танковых снарядов 0.998 калибра (Буря).</MakeAmmo_NCFCBolter998_Tempest.description>
+  <!-- EN: Making .998 Cal Vehicle Bolter (tempest) shells. -->
+  <MakeAmmo_NCFCBolter998_Tempest.jobString>Изготавливает танковые снаряды 0.998 (Буря)</MakeAmmo_NCFCBolter998_Tempest.jobString>
+  
+</LanguageData>

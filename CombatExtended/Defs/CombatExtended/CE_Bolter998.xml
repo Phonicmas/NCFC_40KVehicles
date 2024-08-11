@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>AmmoNCFC_Bolter998</defName>
+		<label>.998 Cal Bolt</label>
+		<parent>AmmoAdvanced</parent>
+		<iconPath>UI/Icons/ThingCategories/CaliberHighCaliber</iconPath>
+	</ThingCategoryDef>
+
+	<!-- ==================== AmmoSet ========================== -->
+
+	<CombatExtended.AmmoSetDef>
+		<defName>AmmoSet_NCFCBolter998</defName>
+		<label>.998 Cal Bolt</label>
+		<ammoTypes>
+			<Ammo_NCFCBolter998_Standard>Bullet_NCFCBolter998_Standard</Ammo_NCFCBolter998_Standard>
+			<Ammo_NCFCBolter998_Inferno>Bullet_NCFCBolter998_Inferno</Ammo_NCFCBolter998_Inferno>
+			<Ammo_NCFCBolter998_MetalStorm>Bullet_NCFCBolter998_MetalStorm</Ammo_NCFCBolter998_MetalStorm>
+			<Ammo_NCFCBolter998_Kraken>Bullet_NCFCBolter998_Kraken</Ammo_NCFCBolter998_Kraken>
+			<Ammo_NCFCBolter998_Tempest>Bullet_NCFCBolter998_Tempest</Ammo_NCFCBolter998_Tempest>
+		</ammoTypes>
+	</CombatExtended.AmmoSetDef>
+
+	<!-- ==================== Ammo ========================== -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" Name="AmmoNCFCBolter998Base" ParentName="SmallAmmoBase" Abstract="True">
+		<description>A .998 caliber, gyrojet-stabilized projectile, customized for heavy bolters of Astartes Vehicles.</description>
+		<statBases>
+			<Mass>0.262</Mass>
+			<Bulk>0.15</Bulk>
+		</statBases>
+		<tradeTags>
+			<li>CE_AutoEnableTrade</li>
+			<li>CE_AutoEnableCrafting</li>
+		</tradeTags>
+		<thingCategories>
+			<li>AmmoBolter998</li>
+		</thingCategories>
+		<stackLimit>2000</stackLimit>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoNCFCBolter998Base">
+		<defName>Ammo_NCFCBolter998_Standard</defName>
+		<label>.998 cal vehicle bolter shell (Standard)</label>
+		<graphicData>
+			<texPath>Shells/BolterHeavy/Standard</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.34</MarketValue>
+		</statBases>
+		<ammoClass>Standard</ammoClass>
+		<cookOffProjectile>Bullet_NCFCBolter998_Standard</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoNCFCBolter998Base">
+		<defName>Ammo_NCFCBolter998_Inferno</defName>
+		<label>.998 cal vehicle bolter shell (Inferno)</label>
+		<graphicData>
+			<texPath>Shells/BolterHeavy/Inferno</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.28</MarketValue>
+		</statBases>
+		<ammoClass>Inferno</ammoClass>
+		<cookOffProjectile>Bullet_NCFCBolter998_Inferno</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoNCFCBolter998Base">
+		<defName>Ammo_NCFCBolter998_MetalStorm</defName>
+		<label>.998 cal vehicle bolter shell (Metal Storm)</label>
+		<graphicData>
+			<texPath>Shells/BolterHeavy/MetalStorm</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.70</MarketValue>
+		</statBases>
+		<ammoClass>MetalStorm</ammoClass>
+		<cookOffProjectile>Bullet_NCFCBolter998_MetalStorm</cookOffProjectile>
+	</ThingDef>
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoNCFCBolter998Base">
+		<defName>Ammo_NCFCBolter998_Kraken</defName>
+		<label>.998 cal vehicle bolter shell (Kraken)</label>
+		<graphicData>
+			<texPath>Shells/BolterHeavy/Kraken</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>4.44</MarketValue>
+		</statBases>
+		<ammoClass>Kraken</ammoClass>
+		<cookOffProjectile>Bullet_NCFCBolter998_Kraken</cookOffProjectile>
+	</ThingDef>
+
+<!-- 	<CombatExtended.AmmoCategoryDef>
+		<defName>Tempest</defName>
+		<label>Tempest</label>
+		<labelShort>Tempest</labelShort>
+		<description>A gyro-stabilized projectile equipped with EMP charge particularly effective at incapacitating machines and other electronic devices.</description>
+	</CombatExtended.AmmoCategoryDef> -->
+
+	<ThingDef Class="CombatExtended.AmmoDef" ParentName="AmmoNCFCBolter998Base">
+		<defName>Ammo_NCFCBolter998_Tempest</defName>
+		<label>.998 cal vehicle bolter shell (Tempest)</label>
+		<graphicData>
+			<texPath>Shells/BolterHeavy/Tempest</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2.36</MarketValue>
+		</statBases>
+		<ammoClass>Tempest</ammoClass>
+		<cookOffProjectile>Bullet_NCFCBolter998_Tempest</cookOffProjectile>
+	</ThingDef>
+
+	<!-- ================== Projectiles ================== -->
+
+	<ThingDef Name="BaseNCFCBolter998Bullet" ParentName="BaseExplosiveBullet" Abstract="true">
+		<graphicData>
+			<texPath>Things/Projectile/Bullet_Big</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<thingClass>CombatExtended.BulletCE</thingClass>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<speed>96</speed>
+			<dropsCasings>true</dropsCasings>
+			<casingMoteDefname>Mote_HeavyBolterCasing</casingMoteDefname>
+			<castShadow>false</castShadow>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseNCFCBolter998Bullet">
+		<defName>Bullet_NCFCBolter998_Standard</defName>
+		<label>.998 cal vehicle bolt (standard)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>72</damageAmountBase>
+			<armorPenetrationSharp>52</armorPenetrationSharp>
+			<armorPenetrationBlunt>1293</armorPenetrationBlunt>
+			<secondaryDamage>
+				<li>
+					<def>Bomb_Secondary</def>
+					<amount>52</amount>
+				</li>
+			</secondaryDamage>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseNCFCBolter998Bullet">
+		<defName>Bullet_NCFCBolter998_Inferno</defName>
+		<label>.998 cal vehicle bolt (inferno)</label>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<armorPenetrationSharp>40</armorPenetrationSharp>
+			<armorPenetrationBlunt>1128</armorPenetrationBlunt>
+			<damageDef>PrometheumFlame</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<explosionRadius>1.5</explosionRadius>
+			<preExplosionSpawnThingDef>FilthPrometheum</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>0.7</preExplosionSpawnChance>
+			<soundExplode>MortarIncendiary_Explode</soundExplode>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>21</damageAmountBase>
+				<explosiveDamageType>Thermobaric</explosiveDamageType>
+				<explosiveRadius>1</explosiveRadius>
+				<explosionSound>MortarIncendiary_Explode</explosionSound>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseNCFCBolter998Bullet">
+		<defName>Bullet_NCFCBolter998_MetalStorm</defName>
+		<thingClass>CombatExtended.ProjectileCE_Bursting</thingClass>
+		<label>.998 cal vehicle bolt (metal storm)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<explosionRadius>1</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>17</damageAmountBase>
+			<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			<aimHeightOffset>1.05</aimHeightOffset>
+			<armingDelay>2</armingDelay>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_Fragments">
+				<fragments>
+					<Fragment_Small>6</Fragment_Small>
+				</fragments>
+				<fragAngleRange>-89~-5</fragAngleRange>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseNCFCBolter998Bullet">
+		<defName>Bullet_NCFCBolter998_Kraken</defName>
+		<label>.998 cal vehicle bolt (kraken)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>142</damageAmountBase>
+			<armorPenetrationSharp>152</armorPenetrationSharp>
+			<armorPenetrationBlunt>79</armorPenetrationBlunt>
+		</projectile>
+		<comps>
+			<li Class="CombatExtended.CompProperties_ExplosiveCE">
+				<damageAmountBase>17</damageAmountBase>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<explosiveRadius>0.5</explosiveRadius>
+				<explosionSound>MortarBomb_Explode</explosionSound>
+				<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseNCFCBolter998Bullet">
+		<defName>Bullet_NCFCBolter998_Tempest</defName>
+		<thingClass>CombatExtended.ProjectileCE_Explosive</thingClass>
+		<label>.998 cal vehicle bolt (tempest)</label>
+		<projectile Class="CombatExtended.ProjectilePropertiesCE">
+			<damageAmountBase>48</damageAmountBase>
+			<secondaryDamage>
+				<li>
+					<def>EMP</def>
+					<amount>52</amount>
+				</li>
+			</secondaryDamage>
+			<armorPenetrationSharp>42</armorPenetrationSharp>
+			<armorPenetrationBlunt>1010</armorPenetrationBlunt>
+			<empShieldBreakChance>0.6</empShieldBreakChance>
+		</projectile>
+	</ThingDef>
+
+	<!-- ==================== Recipes ========================== -->
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_NCFCBolter998_Standard</defName>
+		<label>make .998 Cal Vehicle Bolter (standard) shell x200</label>
+		<description>Craft 200 .998 Cal Vehicle Bolter (standard) shells.</description>
+		<jobString>Making .998 Cal Vehicle Bolter (standard) shells.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>154</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_NCFCBolter998_Standard>200</Ammo_NCFCBolter998_Standard>
+		</products>
+		<workAmount>36600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_NCFCBolter998_Inferno</defName>
+		<label>make .998 Cal Vehicle Bolter (inferno) shell x200</label>
+		<description>Craft 200 .998 Cal Vehicle Bolter (inferno) shells.</description>
+		<jobString>Making .998 Cal Vehicle Bolter (inferno) shells.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>154</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Prometheum</li>
+					</thingDefs>
+				</filter>
+				<count>12</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>Prometheum</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_NCFCBolter998_Inferno>200</Ammo_NCFCBolter998_Inferno>
+		</products>
+		<workAmount>19400</workAmount>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_NCFCBolter998_MetalStorm</defName>
+		<label>make .998 Cal Vehicle Bolter (metal storm) shell x200</label>
+		<description>Craft 200 .998 Cal Vehicle Bolter (metal storm) shells.</description>
+		<jobString>Making .998 Cal Vehicle Bolter (metal storm) shells.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>154</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_NCFCBolter998_MetalStorm>200</Ammo_NCFCBolter998_MetalStorm>
+		</products>
+		<workAmount>21800</workAmount>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_NCFCBolter998_Kraken</defName>
+		<label>make .998 Cal Vehicle Bolter (kraken) shell x200</label>
+		<description>Craft 200 .998 Cal Vehicle Bolter (kraken) shells.</description>
+		<jobString>Making .998 Cal Vehicle Bolter (kraken) shells.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>154</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+				<li>Uranium</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_NCFCBolter998_Kraken>200</Ammo_NCFCBolter998_Kraken>
+		</products>
+		<workAmount>20600</workAmount>
+	</RecipeDef>
+
+	<RecipeDef ParentName="AmmoRecipeBase">
+		<defName>MakeAmmo_NCFCBolter998_Tempest</defName>
+		<label>make .998 Cal Vehicle Bolter (tempest) shell x200</label>
+		<description>Craft 200 .998 Cal Vehicle Bolter (tempest) shells.</description>
+		<jobString>Making .998 Cal Vehicle Bolter (tempest) shells.</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>154</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>FSX</li>
+					</thingDefs>
+				</filter>
+				<count>18</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>6</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Steel</li>
+				<li>FSX</li>
+				<li>ComponentIndustrial</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Ammo_NCFCBolter998_Tempest>200</Ammo_NCFCBolter998_Tempest>
+		</products>
+		<workAmount>36600</workAmount>
+	</RecipeDef>
+
+</Defs>

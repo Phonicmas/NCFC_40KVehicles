@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  
+  <!-- EN: Rhino -->
+  <GF40K_Rhino.label>«Носорог»</GF40K_Rhino.label>
+  <!-- EN: The Rhino armored personnel carrier is one of the most common armored vehicles in the Imperium of Man. It is favored due to its durability and versatility. Rhino is easy to construct and can be modified for different tasks, becoming a platform for mounting additional weapons, although this may limit the number of personnel it can carry.\nCommonly used by the Space Marines, it is also used by the Adeptus Mechanicus, Adepta Sororitas, Adeptus Custodes and Inquisition.\nA single driver controls the Rhino, simultaneously managing the remotely operated Storm Bolter. The suppressive fire it provides, in addition to the smoke screens, enables safe deployment of personnel. The engines of the Rhino are a remarkable feat of engineering, able to operate on almost any variety of flammable fuel. In the event of an engine malfunction during a battle, the remaining engine will sustain movement of the APC across the battlefield.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Personnel x6\n&lt;color=#ffd75d&gt;Armament: &lt;/color&gt;Storm Bolter x1, Smoke Launcher x1\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel\n\nThe armament of this vehicle can be equipped with the following types of ammunition: -->
+  <GF40K_Rhino.description>Гусеничный бронетранспортёр «Носорог» — одна из самых распространённых бронированных машин Империума Человечества. Он получил широкое распространение благодаря своей прочности и универсальности. «Носорог» прост в производстве и может быть легко модифицирован, становясь платформой для установки дополнительного вооружения, ценой снижения вместимости перевозимого личного состава.\nЭтот бронетранспортёр является основным транспортом Адептус Астартес, но широко используется и Адептус Механикус, Адепта Сороритас, Адептус Кустодес и Инквизицией.\n«Носорог» управляется одним водителем, который одновременно контролирует дистанционно управляемый шторм-болтер. В дополнение к дымовым завесам, подавляющий огонь позволяет безопасно перемещать и высаживать личный состав.\n\n&lt;color=#ffd75d&gt;Экипаж:&lt;/color&gt; Водитель x1, Личный состав x6\n&lt;color=#ffd75d&gt;Вооружение: &lt;/color&gt;Шторм-болтер x1, Дымовой гранатомёт x1\n&lt;color=#ffd75d&gt;Тип топлива:&lt;/color&gt; Химтопливо\n\nВооружение этого ТС может использовать следующие типы боеприпасов:</GF40K_Rhino.description>
+
+  <!-- EN: Driver -->
+  <GF40K_Rhino.properties.roles.0.label>Водитель</GF40K_Rhino.properties.roles.0.label>
+  <!-- EN: Personnel -->
+  <GF40K_Rhino.properties.roles.1.label>Личный состав</GF40K_Rhino.properties.roles.1.label>
+  <!-- EN: ATCR Engine I -->
+  <GF40K_Rhino.components.0.label>Двигатель I</GF40K_Rhino.components.0.label>
+  <!-- EN: ATCR Engine II -->
+  <GF40K_Rhino.components.1.label>Двигатель II</GF40K_Rhino.components.1.label>
+  <!-- EN: Left Track -->
+  <GF40K_Rhino.components.2.label>Левая гусеничная цепь</GF40K_Rhino.components.2.label>
+  <!-- EN: Right Track -->
+  <GF40K_Rhino.components.3.label>Правая гусеничная цепь</GF40K_Rhino.components.3.label>
+  <!-- EN: Front Left Drive Sprocket -->
+  <GF40K_Rhino.components.4.label>Левое направляющее колесо</GF40K_Rhino.components.4.label>
+  <!-- EN: Front Right Drive Sprocket -->
+  <GF40K_Rhino.components.5.label>Правое направляющее колесо</GF40K_Rhino.components.5.label>
+  <!-- EN: Back Left Drive Sprocket -->
+  <GF40K_Rhino.components.6.label>Левый ведущий каток</GF40K_Rhino.components.6.label>
+  <!-- EN: Back Right Drive Sprocket -->
+  <GF40K_Rhino.components.7.label>Правый ведущий каток</GF40K_Rhino.components.7.label>
+  <!-- EN: Gearbox -->
+  <GF40K_Rhino.components.8.label>Коробка передач</GF40K_Rhino.components.8.label>
+  <!-- EN: Front Armor Plating -->
+  <GF40K_Rhino.components.9.label>Передняя бронепанель</GF40K_Rhino.components.9.label>
+  <!-- EN: Left Armor Plating -->
+  <GF40K_Rhino.components.10.label>Левая бронепанель</GF40K_Rhino.components.10.label>
+  <!-- EN: Right Armor Plating -->
+  <GF40K_Rhino.components.11.label>Правая бронепанель</GF40K_Rhino.components.11.label>
+  <!-- EN: Rear Armor Plating -->
+  <GF40K_Rhino.components.12.label>Задняя бронепанель</GF40K_Rhino.components.12.label>
+  <!-- EN: Fuel Tanks -->
+  <GF40K_Rhino.components.13.label>Топливные баки</GF40K_Rhino.components.13.label>
+  <!-- EN: Control Panel -->
+  <GF40K_Rhino.components.14.label>Приборная панель</GF40K_Rhino.components.14.label>
+  <!-- EN: Steering system -->
+  <GF40K_Rhino.components.15.label>Рулевое устройство</GF40K_Rhino.components.15.label>
+  <!-- EN: Roof -->
+  <GF40K_Rhino.components.16.label>Крыша</GF40K_Rhino.components.16.label>
+  
+  <!-- EN: Storm Bolter -->
+  <GF40K_Rhino.comps.CompVehicleTurrets.turrets.0.gizmoLabel>Шторм-болтер</GF40K_Rhino.comps.CompVehicleTurrets.turrets.0.gizmoLabel>
+  <!-- EN: Smoke Launcher -->
+  <GF40K_Rhino.comps.CompVehicleTurrets.turrets.1.gizmoLabel>Дымовой гранатомёт</GF40K_Rhino.comps.CompVehicleTurrets.turrets.1.gizmoLabel>
+  
+</LanguageData>

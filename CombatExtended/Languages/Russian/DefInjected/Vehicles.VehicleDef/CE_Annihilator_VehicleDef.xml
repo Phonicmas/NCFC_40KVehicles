@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  
+  <!-- EN: Predator Annihilator -->
+  <Annihilator.label>«Хищник-Аннигилятор»</Annihilator.label>
+  <!-- EN: The Predator Annihilator is a variant of the basic Predator Destructor tank used by the Space Marine Chapters. This pattern was first introduced in the 36th Millennium as a dedicated tank killer. The Annihilator is equipped with turret-mounted twin-linked Stormbringer lascannons, as opposed to the basic autocannon of the Predator Destructor.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1\n&lt;color=#ffd75d&gt;Armament: &lt;/color&gt;Storm Bolter x1, Stormbringer Cannon x1\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel\n\nThe armament of this vehicle can be equipped with the following types of ammunition: -->
+  <Annihilator.description>«Хищник-Аннигилятор» — более поздний вариант «Хищника», обладающий усиленной противотанковой огневой мощью. Он играет роль тяжелобронированного мобильного охотника на танки в соединениях Адептус Астартес. «Хищник-Аннигилятор» оснащён спаренной лазпушкой «Буревестник», размещённой на башне.\n\n&lt;color=#ffd75d&gt;Экипаж:&lt;/color&gt; Водитель x1, Стрелок x1\n&lt;color=#ffd75d&gt;Вооружение: &lt;/color&gt;Шторм-болтер x1, Спаренная лазпушка «Буревестник» x1\n&lt;color=#ffd75d&gt;Тип топлива:&lt;/color&gt; Химтопливо\n\nВооружение этого ТС может использовать следующие типы боеприпасов:</Annihilator.description>
+
+  <!-- EN: Driver -->
+  <Annihilator.properties.roles.0.label>Водитель</Annihilator.properties.roles.0.label>
+  <!-- EN: Gunner -->
+  <Annihilator.properties.roles.1.label>Стрелок</Annihilator.properties.roles.1.label>
+  <!-- EN: ATCR Engine I -->
+  <Annihilator.components.0.label>Двигатель I</Annihilator.components.0.label>
+  <!-- EN: ATCR Engine II -->
+  <Annihilator.components.1.label>Двигатель II</Annihilator.components.1.label>
+  <!-- EN: Left Track -->
+  <Annihilator.components.2.label>Левая гусеничная цепь</Annihilator.components.2.label>
+  <!-- EN: Right Track -->
+  <Annihilator.components.3.label>Правая гусеничная цепь</Annihilator.components.3.label>
+  <!-- EN: Front Left Drive Sprocket -->
+  <Annihilator.components.4.label>Левое направляющее колесо</Annihilator.components.4.label>
+  <!-- EN: Front Right Drive Sprocket -->
+  <Annihilator.components.5.label>Правое направляющее колесо</Annihilator.components.5.label>
+  <!-- EN: Back Left Drive Sprocket -->
+  <Annihilator.components.6.label>Левый ведущий каток</Annihilator.components.6.label>
+  <!-- EN: Back Right Drive Sprocket -->
+  <Annihilator.components.7.label>Правый ведущий каток</Annihilator.components.7.label>
+  <!-- EN: Gearbox -->
+  <Annihilator.components.8.label>Коробка передач</Annihilator.components.8.label>
+  <!-- EN: Front Armor Plating -->
+  <Annihilator.components.9.label>Передняя бронепанель</Annihilator.components.9.label>
+  <!-- EN: Left Armor Plating -->
+  <Annihilator.components.10.label>Левая бронепанель</Annihilator.components.10.label>
+  <!-- EN: Right Armor Plating -->
+  <Annihilator.components.11.label>Правая бронепанель</Annihilator.components.11.label>
+  <!-- EN: Rear Armor Plating -->
+  <Annihilator.components.12.label>Задняя бронепанель</Annihilator.components.12.label>
+  <!-- EN: Fuel Tanks -->
+  <Annihilator.components.13.label>Топливные баки</Annihilator.components.13.label>
+  <!-- EN: Control Panel -->
+  <Annihilator.components.14.label>Приборная панель</Annihilator.components.14.label>
+  <!-- EN: Steering system -->
+  <Annihilator.components.15.label>Рулевое устройство</Annihilator.components.15.label>
+  <!-- EN: Roof -->
+  <Annihilator.components.16.label>Крыша</Annihilator.components.16.label>
+  
+  <!-- EN: Stormbringer Cannon -->
+  <Annihilator.comps.CompVehicleTurrets.turrets.0.gizmoLabel>Лазпушка «Буревестник»</Annihilator.comps.CompVehicleTurrets.turrets.0.gizmoLabel>
+  <!-- EN: Storm Bolter -->
+  <Annihilator.comps.CompVehicleTurrets.turrets.1.gizmoLabel>Шторм-болтер</Annihilator.comps.CompVehicleTurrets.turrets.1.gizmoLabel>
+  
+</LanguageData>

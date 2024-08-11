@@ -18,10 +18,6 @@
   <GF40K_Land_Raider_SideTurretLeft.label>левая лазпушка</GF40K_Land_Raider_SideTurretLeft.label>
   <!-- EN: The Lascannon is a formidable laser weapon capable of firing a high energy coherent beam of light that can penetrate most armored vehicles. However, its slow recharge rate makes it a poor anti-personnel weapon. This Godhammer pattern Lascannon comes twin-linked to improve the area of impact and hitting power. -->
   <GF40K_Land_Raider_SideTurretLeft.description>Лазпушка — это мощное оружие, чей единственный выстрел лучом испепеляющего света способен уничтожить большинство бронированных машин противника. Однако подобное оружие громоздко и требует много энергии, а также длительной перезарядки после каждого выстрела, что делает его плохим выбором против пехоты. Данная лазпушка модели «Божественный молот» состоит из двух спаренных стволов для увеличения площади поражения и силы удара.</GF40K_Land_Raider_SideTurretLeft.description>
-  <!-- EN: Quad Shot -->
-  <GF40K_Land_Raider_SideTurretLeft.fireModes.0.label>стрельба очередями</GF40K_Land_Raider_SideTurretLeft.fireModes.0.label>
-  <!-- EN: Single Shot -->
-  <GF40K_Land_Raider_SideTurretLeft.fireModes.1.label>стрельба одиночными выстрелами</GF40K_Land_Raider_SideTurretLeft.fireModes.1.label>
   
 
   <!-- EN: Select Target.\n\nFire for effect -->
@@ -30,8 +26,4 @@
   <GF40K_Land_Raider_SideTurretRight.label>правая лазпушка</GF40K_Land_Raider_SideTurretRight.label>
   <!-- EN: The Lascannon is a formidable laser weapon capable of firing a high energy coherent beam of light that can penetrate most armored vehicles. However, its slow recharge rate makes it a poor anti-personnel weapon. This Godhammer pattern Lascannon comes twin-linked to improve the area of impact and hitting power. -->
   <GF40K_Land_Raider_SideTurretRight.description>Лазпушка — это мощное оружие, чей единственный выстрел лучом испепеляющего света способен уничтожить большинство бронированных машин противника. Однако подобное оружие громоздко и требует много энергии, а также длительной перезарядки после каждого выстрела, что делает его плохим выбором против пехоты. Данная лазпушка модели «Божественный молот» состоит из двух спаренных стволов для увеличения площади поражения и силы удара.</GF40K_Land_Raider_SideTurretRight.description>
-  <!-- EN: Quad Shot -->
-  <GF40K_Land_Raider_SideTurretRight.fireModes.0.label>стрельба очередями</GF40K_Land_Raider_SideTurretRight.fireModes.0.label>
-  <!-- EN: Single Shot -->
-  <GF40K_Land_Raider_SideTurretRight.fireModes.1.label>стрельба одиночными выстрелами</GF40K_Land_Raider_SideTurretRight.fireModes.1.label>
 </LanguageData>

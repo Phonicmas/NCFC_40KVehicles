@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: A .75 caliber, gyrojet-stabilized projectile, customized for Astartes Vehicles. -->
+  <Ammo_NCFCBolter75_Standard.description>Гиростабилизированный болт-снаряд 0.75 калибра, адаптированный для транспортных средств Астартес.</Ammo_NCFCBolter75_Standard.description>
+  <!-- EN: .75 cal vehicle bolter shell (Standard) -->
+  <Ammo_NCFCBolter75_Standard.label>танковый снаряд 0.75 (Стандарт)</Ammo_NCFCBolter75_Standard.label>
+  
+  <!-- EN: A .75 caliber, gyrojet-stabilized projectile, customized for Astartes Vehicles. -->
+  <Ammo_NCFCBolter75_Inferno.description>Гиростабилизированный болт-снаряд 0.75 калибра, адаптированный для транспортных средств Астартес.</Ammo_NCFCBolter75_Inferno.description>
+  <!-- EN: .75 cal vehicle bolter shell (Inferno) -->
+  <Ammo_NCFCBolter75_Inferno.label>танковый снаряд 0.75 (Инферно)</Ammo_NCFCBolter75_Inferno.label>
+  
+  <!-- EN: A .75 caliber, gyrojet-stabilized projectile, customized for Astartes Vehicles. -->
+  <Ammo_NCFCBolter75_MetalStorm.description>Гиростабилизированный болт-снаряд 0.75 калибра, адаптированный для транспортных средств Астартес.</Ammo_NCFCBolter75_MetalStorm.description>
+  <!-- EN: .75 cal vehicle bolter shell (Metal Storm) -->
+  <Ammo_NCFCBolter75_MetalStorm.label>танковый снаряд 0.75 (Стальной шторм)</Ammo_NCFCBolter75_MetalStorm.label>
+  
+  <!-- EN: A .75 caliber, gyrojet-stabilized projectile, customized for Astartes Vehicles. -->
+  <Ammo_NCFCBolter75_Kraken.description>Гиростабилизированный болт-снаряд 0.75 калибра, адаптированный для транспортных средств Астартес.</Ammo_NCFCBolter75_Kraken.description>
+  <!-- EN: .75 cal vehicle bolter shell (Kraken) -->
+  <Ammo_NCFCBolter75_Kraken.label>танковый снаряд 0.75 (Кракен)</Ammo_NCFCBolter75_Kraken.label>
+  
+  <!-- EN: A .75 caliber, gyrojet-stabilized projectile, customized for Astartes Vehicles. -->
+  <Ammo_NCFCBolter75_Tempest.description>Гиростабилизированный болт-снаряд 0.75 калибра, адаптированный для транспортных средств Астартес.</Ammo_NCFCBolter75_Tempest.description>
+  <!-- EN: .75 cal vehicle bolter shell (Tempest) -->
+  <Ammo_NCFCBolter75_Tempest.label>танковый снаряд 0.75 (Буря)</Ammo_NCFCBolter75_Tempest.label>
+  
+  <!-- EN: .75 cal vehicle bolt (standard) -->
+  <Bullet_NCFCBolter75_Standard.label>танковый снаряд 0.75 (Стандарт)</Bullet_NCFCBolter75_Standard.label>
+  
+  <!-- EN: .75 cal vehicle bolt (inferno) -->
+  <Bullet_NCFCBolter75_Inferno.label>танковый снаряд 0.75 (Инферно)</Bullet_NCFCBolter75_Inferno.label>
+  
+  <!-- EN: .75 cal vehicle bolt (metal storm) -->
+  <Bullet_NCFCBolter75_MetalStorm.label>танковый снаряд 0.75 (Стальной шторм)</Bullet_NCFCBolter75_MetalStorm.label>
+  
+  <!-- EN: .75 cal vehicle bolt (kraken) -->
+  <Bullet_NCFCBolter75_Kraken.label>танковый снаряд 0.75 (Кракен)</Bullet_NCFCBolter75_Kraken.label>
+  
+  <!-- EN: .75 cal vehicle bolt (tempest) -->
+  <Bullet_NCFCBolter75_Tempest.label>танковый снаряд 0.75 (Буря)</Bullet_NCFCBolter75_Tempest.label>
+  
+</LanguageData>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: make Whirlwind (HE) missiles x12 -->
+  <MakeAmmo_WhirlwindRocket_HE.label>изготовить ракеты «Возмездие» x12</MakeAmmo_WhirlwindRocket_HE.label>
+  <!-- EN: Craft 12 Whirlwind (HE) missiles. -->
+  <MakeAmmo_WhirlwindRocket_HE.description>Изготовить 12 ракет «Возмездие».</MakeAmmo_WhirlwindRocket_HE.description>
+  <!-- EN: Making Whirlwind (HE) missiles. -->
+  <MakeAmmo_WhirlwindRocket_HE.jobString>Изготавливает ракеты «Возмездие»</MakeAmmo_WhirlwindRocket_HE.jobString>
+  
+  <!-- EN: make Whirlwind (INC) missiles x12 -->
+  <MakeAmmo_WhirlwindRocket_INC.label>изготовить зажигательные ракеты «Кастелян» x12</MakeAmmo_WhirlwindRocket_INC.label>
+  <!-- EN: Craft 12 Whirlwind (INC) missiles. -->
+  <MakeAmmo_WhirlwindRocket_INC.description>Изготовить 12 зажигательных ракет «Кастелян».</MakeAmmo_WhirlwindRocket_INC.description>
+  <!-- EN: Making Whirlwind (INC) missiles. -->
+  <MakeAmmo_WhirlwindRocket_INC.jobString>Изготавливает зажигательные ракеты «Кастелян»</MakeAmmo_WhirlwindRocket_INC.jobString>
+  
+  <!-- EN: make Whirlwind (DEP) missiles x12 -->
+  <MakeAmmo_WhirlwindRocket_DEP.label>изготовить ракеты-развёртыватели «Кастелян» x12</MakeAmmo_WhirlwindRocket_DEP.label>
+  <!-- EN: Craft 12 Whirlwind (DEP) missiles. -->
+  <MakeAmmo_WhirlwindRocket_DEP.description>Изготовить 12 ракет-развёртывателей «Кастелян».</MakeAmmo_WhirlwindRocket_DEP.description>
+  <!-- EN: Making Whirlwind (DEP) missiles. -->
+  <MakeAmmo_WhirlwindRocket_DEP.jobString>Изготавливает ракеты-развёртыватели «Кастелян»</MakeAmmo_WhirlwindRocket_DEP.jobString>
+  
+</LanguageData>

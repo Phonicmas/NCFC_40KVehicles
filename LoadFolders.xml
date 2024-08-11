@@ -7,5 +7,7 @@
   <v1.5>
     <li>/</li>
     <li>1.5</li>
+	<li IfModNotActive="ceteam.combatextended">WithoutCE</li>
+	<li IfModActive="ceteam.combatextended">CombatExtended</li>
   </v1.5>
 </loadFolders>

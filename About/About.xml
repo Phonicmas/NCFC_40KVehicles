@@ -21,6 +21,7 @@
 	<loadAfter>
 		<li>smashphil.vehicleframework</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>CETeam.CombatExtended</li>
 	</loadAfter>
 	<description>
 	</description>

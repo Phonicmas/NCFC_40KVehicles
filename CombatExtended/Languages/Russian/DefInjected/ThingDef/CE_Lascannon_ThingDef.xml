@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: A power pack for Astartes Vehicles lascannons. -->
+  <Ammo_NcfcLascannonPowerPack.description>Блок питания для лазпушек транспортных средств Астартес.</Ammo_NcfcLascannonPowerPack.description>
+  <!-- EN: lascannon power pack -->
+  <Ammo_NcfcLascannonPowerPack.label>аккумулятор лазпушки</Ammo_NcfcLascannonPowerPack.label>
+  <!-- EN: laser beam -->
+  <Bullet_NcfcLascannon.label>лазерный луч</Bullet_NcfcLascannon.label>
+  
+</LanguageData>

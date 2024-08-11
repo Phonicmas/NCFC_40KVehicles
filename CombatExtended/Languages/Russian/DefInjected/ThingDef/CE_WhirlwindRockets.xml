@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: A high explosive missile containing a proximity fuse and explosive warhead. -->
+  <Ammo_WhirlwindRocket_HE.description>Ракета, содержащая неконтактный взрыватель и разрывную боеголовку. Используется танками «Вихрь».</</Ammo_WhirlwindRocket_HE.description>
+  <!-- EN: Whirlwind missile (Vengeance) -->
+  <Ammo_WhirlwindRocket_HE.label>ракета «Возмездие»</Ammo_WhirlwindRocket_HE.label>
+  
+  <!-- EN: A high explosive missile containing a proximity fuse and explosive warhead. -->
+  <Ammo_WhirlwindRocket_INC.description>Ракета, содержащая неконтактный взрыватель и разрывную боеголовку. Используется танками «Вихрь».</</Ammo_WhirlwindRocket_INC.description>
+  <!-- EN: Whirlwind missile (Incendiary Castellan) -->
+  <Ammo_WhirlwindRocket_INC.label>зажигательная ракета «Кастелян»</Ammo_WhirlwindRocket_INC.label>
+  
+  <!-- EN: A high explosive missile containing a proximity fuse and explosive warhead. -->
+  <Ammo_WhirlwindRocket_DEP.description>Ракета, содержащая неконтактный взрыватель и разрывную боеголовку. Используется танками «Вихрь».</Ammo_WhirlwindRocket_DEP.description>
+  <!-- EN: Whirlwind missile (Castellan) -->
+  <Ammo_WhirlwindRocket_DEP.label>ракета-развёртыватель «Кастелян»</Ammo_WhirlwindRocket_DEP.label>
+  
+  <!-- EN: Whirlwind missile (Vengeance) -->
+  <Bullet_WhirlwindRocket_HE.label>ракета «Возмездие»</Bullet_WhirlwindRocket_HE.label>
+  
+  <!-- EN: Whirlwind missile (Incendiary Castellan) -->
+  <Bullet_WhirlwindRocket_INC.label>зажигательная ракета «Кастелян»</Bullet_WhirlwindRocket_INC.label>
+  
+  <!-- EN: puddle of volatile chemicals -->
+  <GF40K_Thing_ToxGasRelease.label>лужа горючих химикатов</GF40K_Thing_ToxGasRelease.label>
+  
+  <!-- EN: Whirlwind missile (Castellan) -->
+  <Bullet_WhirlwindRocket_DEP.label>ракета-развёртыватель «Кастелян»</Bullet_WhirlwindRocket_DEP.label>
+  
+  <!-- EN: Castellan bomblet -->
+  <GF40K_Whirlwind_landmine.label>бомбовый снаряд «Кастелян»</GF40K_Whirlwind_landmine.label>
+  <!-- EN: A small mine-like bomblet, commonly found in minefields deployed by a Castellan missile. -->
+  <GF40K_Whirlwind_landmine.description>Небольшой, похожий на мину бомбовый снаряд, выпущенный ракетой «Кастелян».</GF40K_Whirlwind_landmine.description>
+  
+</LanguageData>

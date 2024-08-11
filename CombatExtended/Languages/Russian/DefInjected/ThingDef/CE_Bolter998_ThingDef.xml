@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: A .998 caliber, gyrojet-stabilized projectile, customized for heavy bolters of Astartes Vehicles. -->
+  <Ammo_NCFCBolter998_Standard.description>Гиростабилизированный болт-снаряд 0.998 калибра, адаптированный для транспортных средств Астартес.</Ammo_NCFCBolter998_Standard.description>
+  <!-- EN: .998 cal vehicle bolter shell (Standard) -->
+  <Ammo_NCFCBolter998_Standard.label>танковый снаряд 0.998 (Стандарт)</Ammo_NCFCBolter998_Standard.label>
+  
+  <!-- EN: A .998 caliber, gyrojet-stabilized projectile, customized for heavy bolters of Astartes Vehicles. -->
+  <Ammo_NCFCBolter998_Inferno.description>Гиростабилизированный болт-снаряд 0.998 калибра, адаптированный для транспортных средств Астартес.</Ammo_NCFCBolter998_Inferno.description>
+  <!-- EN: .998 cal vehicle bolter shell (Inferno) -->
+  <Ammo_NCFCBolter998_Inferno.label>танковый снаряд 0.998 (Инферно)</Ammo_NCFCBolter998_Inferno.label>
+  
+  <!-- EN: A .998 caliber, gyrojet-stabilized projectile, customized for heavy bolters of Astartes Vehicles. -->
+  <Ammo_NCFCBolter998_MetalStorm.description>Гиростабилизированный болт-снаряд 0.998 калибра, адаптированный для транспортных средств Астартес.</Ammo_NCFCBolter998_MetalStorm.description>
+  <!-- EN: .998 cal vehicle bolter shell (Metal Storm) -->
+  <Ammo_NCFCBolter998_MetalStorm.label>танковый снаряд 0.998 (Стальной шторм)</Ammo_NCFCBolter998_MetalStorm.label>
+  
+  <!-- EN: A .998 caliber, gyrojet-stabilized projectile, customized for heavy bolters of Astartes Vehicles. -->
+  <Ammo_NCFCBolter998_Kraken.description>Гиростабилизированный болт-снаряд 0.998 калибра, адаптированный для транспортных средств Астартес.</Ammo_NCFCBolter998_Kraken.description>
+  <!-- EN: .998 cal vehicle bolter shell (Kraken) -->
+  <Ammo_NCFCBolter998_Kraken.label>танковый снаряд 0.998 (Кракен)</Ammo_NCFCBolter998_Kraken.label>
+  
+  <!-- EN: A .998 caliber, gyrojet-stabilized projectile, customized for heavy bolters of Astartes Vehicles. -->
+  <Ammo_NCFCBolter998_Tempest.description>Гиростабилизированный болт-снаряд 0.998 калибра, адаптированный для транспортных средств Астартес.</Ammo_NCFCBolter998_Tempest.description>
+  <!-- EN: .998 cal vehicle bolter shell (Tempest) -->
+  <Ammo_NCFCBolter998_Tempest.label>танковый снаряд 0.998 (Буря)</Ammo_NCFCBolter998_Tempest.label>
+  
+  <!-- EN: .998 cal vehicle bolt (standard) -->
+  <Bullet_NCFCBolter998_Standard.label>танковый снаряд 0.998 (Стандарт)</Bullet_NCFCBolter998_Standard.label>
+  
+  <!-- EN: .998 cal vehicle bolt (inferno) -->
+  <Bullet_NCFCBolter998_Inferno.label>танковый снаряд 0.998 (Инферно)</Bullet_NCFCBolter998_Inferno.label>
+  
+  <!-- EN: .998 cal vehicle bolt (metal storm) -->
+  <Bullet_NCFCBolter998_MetalStorm.label>танковый снаряд 0.998 (Стальной шторм)</Bullet_NCFCBolter998_MetalStorm.label>
+  
+  <!-- EN: .998 cal vehicle bolt (kraken) -->
+  <Bullet_NCFCBolter998_Kraken.label>танковый снаряд 0.998 (Кракен)</Bullet_NCFCBolter998_Kraken.label>
+  
+  <!-- EN: .998 cal vehicle bolt (tempest) -->
+  <Bullet_NCFCBolter998_Tempest.label>танковый снаряд 0.998 (Буря)</Bullet_NCFCBolter998_Tempest.label>
+  
+</LanguageData>

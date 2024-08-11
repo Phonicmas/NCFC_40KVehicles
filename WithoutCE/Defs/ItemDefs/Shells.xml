@@ -251,7 +251,7 @@
     </recipeMaker>
   </ThingDef>
 
-  <!--Shrapnel projectile VE Framework dependable -->
+  <!--Shrapnel projectile VE Framework dependable (Now for real :D) -->
   <ThingDef ParentName="BaseBullet">
     <defName>GF40K_Projectile_Shrapnel</defName>
     <label>Castellan missile</label>
@@ -262,8 +262,8 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
-    <thingClass>GF40K.Projectile_Shrapnel</thingClass>
-    <projectile Class="GF40K.ProjectileProperties_Shrapnel">
+    <thingClass>VFECore.Projectile_Shrapnel</thingClass>
+    <projectile Class="VFECore.ProjectileProperties_Shrapnel">  <!-- GF40K.ProjectileProperties_Shrapnel -->
       <damageDef>Smoke</damageDef>
       <speed>27</speed>
       <explosionRadius>2.9</explosionRadius>
@@ -274,7 +274,7 @@
       <soundAmbient>MortarRound_Ambient</soundAmbient>
       <shrapnelProjectile>GF40K_Whirlwind_projectile_minefield</shrapnelProjectile>
       <shrapnelCount>4</shrapnelCount>
-      <shrapnelRange>18</shrapnelRange> 
+      <shrapnelRange>18</shrapnelRange>
       <angleVariance>45</angleVariance>
     </projectile>
   </ThingDef>

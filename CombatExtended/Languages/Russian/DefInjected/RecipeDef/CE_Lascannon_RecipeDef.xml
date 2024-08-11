@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: make lascannon power pack x40 -->
+  <MakeAmmo_NcfcLascannonPowerPack.label>изготовить аккумуляторы лазпушки x40</MakeAmmo_NcfcLascannonPowerPack.label>
+  <!-- EN: Craft 40 lascannon batteries. -->
+  <MakeAmmo_NcfcLascannonPowerPack.description>Изготовить 40 аккумуляторов для лазпушки.</MakeAmmo_NcfcLascannonPowerPack.description>
+  <!-- EN: Making lascannon power pack. -->
+  <MakeAmmo_NcfcLascannonPowerPack.jobString>Изготавливает аккумуляторы лазпушки</MakeAmmo_NcfcLascannonPowerPack.jobString>
+  
+</LanguageData>

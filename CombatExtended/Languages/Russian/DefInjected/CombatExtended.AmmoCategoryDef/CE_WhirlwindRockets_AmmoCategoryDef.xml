@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- EN: High-explosive missile -->
+  <WhirlwindHE.label>ракета «Возмездие»</WhirlwindHE.label>
+  <!-- EN: HE -->
+  <WhirlwindHE.labelShort>«Возмездие»</WhirlwindHE.labelShort>
+  <!-- EN: Vengeance missiles are the standard warheads used by the Whirlwind. The Vengeance missile is a high explosive missile containing a proximity fuse, which detonates the missile close to the target, scattering deadly shrapnel over the entire area. -->
+  <WhirlwindHE.description>Ракеты «Возмездие» (Vengeance) — это стандартные боеголовки, используемые САУ «Вихрь» (Whirlwind). Эта ракета снабжена осколочным снарядом с бесконтактным детонатором, который срабатывает вблизи цели, осыпая всё вокруг смертоносными осколками.</WhirlwindHE.description>
+  
+  <!-- EN: Incendiary missile -->
+  <WhirlwindINC.label>зажигательная ракета «Кастелян»</WhirlwindINC.label>
+  <!-- EN: INC -->
+  <WhirlwindINC.labelShort>«Кастелян»</WhirlwindINC.labelShort>
+  <!-- EN: Instead of a fragmentation charge, incendiary Castellan missiles are equipped with a volatile chemical warhead that covers the target area in scorching flames. This type of a missile is commonly used against enemies inside structures that are protected from fragmentation blasts. Even if the enemies inside the attacked structure are not burned to death, most will succumb to the after vapors, which kill them from the inside out. -->
+  <WhirlwindINC.description>Вместо осколочного заряда зажигательные ракеты «Кастелян» оснащены боеголовкой с легковоспламеняющейся химической смесью, которая окутывает целевую область испепеляющим пламенем. Этот тип ракет обычно используется против врагов, находящихся в хорошо защищённых строениях. Даже если враги внутри атакованного строения не сгорят заживо, большинство из них погибнет под воздействием жгучих химических паров.</WhirlwindINC.description>
+  
+  <!-- EN: Deployer missile -->
+  <WhirlwindDEP.label>ракета-развёртыватель «Кастелян»</WhirlwindDEP.label>
+  <!-- EN: Deployer -->
+  <WhirlwindDEP.labelShort>развёртыватель «Кастелян»</WhirlwindDEP.labelShort>
+  <!-- EN: Castellan Missiles are defensive projectiles equipped with a unique warhead that scatters small bomblets across a designated target area. This allows Imperial forces to establish makeshift minefields rapidly and without exposing themselves to unnecessary danger. -->
+  <WhirlwindDEP.description>Ракеты «Кастелян» — это оборонительные снаряды, оснащённые уникальной боеголовкой, которая разбрасывает небольшие бомбы в заданной области. Это позволяет быстро создавать импровизированные минные поля, не подвергая личный состав неоправданному риску.</WhirlwindDEP.description>
+  
+</LanguageData>
