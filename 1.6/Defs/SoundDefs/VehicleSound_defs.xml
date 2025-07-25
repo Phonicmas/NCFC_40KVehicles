@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<SoundDef>
+		<defName>GF40K_LandRaiderIsBuilt</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Landraider/GF40K_LandRaiderIsBuilt</clipPath>
+					</li>
+				</grains>
+				<volumeRange>30~30</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>GF40K_LandRaiderIgnitionOn</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Landraider/GF40K_LandRaiderIgnitionOn</clipPath>
+					</li>
+				</grains>
+				<volumeRange>40~45</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>GF40K_LandRaiderIgnitionOff</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Landraider/GF40K_LandRaiderIgnitionOff</clipPath>
+					</li>
+				</grains>
+				<volumeRange>40~43</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>GF40K_LandRaiderBoard</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Landraider/GF40K_LandRaiderBoard</clipPath>
+					</li>
+				</grains>
+				<volumeRange>30~33</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>GF40K_LandRaiderDisembark</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Landraider/GF40K_LandRaiderDisembark</clipPath>
+					</li>
+				</grains>
+				<volumeRange>50~55</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>GF40K_LandRaiderEngineSustainer</defName>
+		<sustain>true</sustain>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Landraider/GF40K_LandRaiderEngine</clipPath>
+					</li>
+				</grains>
+				<pitchRange>1.1~1.1</pitchRange>
+				<volumeRange>7~8</volumeRange>
+				<sustainAttack>2.5</sustainAttack>
+				<sustainRelease>2.5</sustainRelease>
+			</li>
+		</subSounds>
+	</SoundDef>
+	<SoundDef>
+		<defName>GF40K_Rhino_IgnitionOn</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Rhino/GF40K_RhinoIgnitionOn</clipPath>
+					</li>
+				</grains>
+				<volumeRange>20~25</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>GF40K_Rhino_IgnitionOff</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Rhino/GF40K_RhinoIgnitionOff</clipPath>
+					</li>
+				</grains>
+				<volumeRange>20~25</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>GF40K_Rhino_PawnEntered</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>GF40K_ArmorBoard</clipPath>
+					</li>
+				</grains>
+				<volumeRange>20~25</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>GF40K_Rhino_PawnExited</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>GF40K_ArmorDisembark</clipPath>
+					</li>
+				</grains>
+				<volumeRange>20~25</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>GF40K_WhirlwindDeployLoop</defName>
+		<context>MapOnly</context>
+		<sustain>true</sustain>
+		<maxSimultaneous>1</maxSimultaneous>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Whirlwind/GF40K_WhirlwindSustainer</clipPath>
+					</li>
+				</grains>
+				<volumeRange>40~45</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>GF40K_WhirlwindDeployed</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Whirlwind/GF40K_WhirlwindDeployed</clipPath>
+					</li>
+				</grains>
+				<volumeRange>40~45</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>GF40K_WhirlwindUndeployed</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>Whirlwind/GF40K_WhirlwindUndeployed</clipPath>
+					</li>
+				</grains>
+				<volumeRange>40~45</volumeRange>
+				<pitchRange>0.85~0.9</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+</Defs>
