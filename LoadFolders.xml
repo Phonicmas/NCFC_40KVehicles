@@ -3,6 +3,6 @@
   <v1.6>
     <li>/</li>
     <li>1.6</li>
-    <!--<li IfModActive="ceteam.combatextended">CombatExtended</li>-->
+    <li IfModActive="ceteam.combatextended">Mods/CombatExtended</li>
   </v1.6>
 </loadFolders>

@@ -42,7 +42,7 @@
 	<Vehicles.VehicleDef ParentName="BaseVehiclePawn">
 		<defName>Annihilator</defName>
 		<label>Predator Annihilator</label>
-		<description>The Predator Annihilator is a variant of the basic Predator Destructor tank used by the Space Marine Chapters. This pattern was first introduced in the 36th Millennium as a dedicated tank killer. The Annihilator is equipped with turret-mounted twin-linked Stormbringer lascannons, as opposed to the basic autocannon of the Predator Destructor.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1\n&lt;color=#ffd75d&gt;Armament: &lt;/color&gt;Storm Bolter x1, Stormbringer Cannon x1\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
+		<description>The Predator Annihilator is a variant of the basic Predator Destructor tank used by the Space Marine Chapters. This pattern was first introduced in the 36th Millennium as a dedicated tank killer. The Annihilator is equipped with turret-mounted twin-linked Stormbringer lascannons, as opposed to the basic autocannon of the Predator Destructor.\n\n&lt;color=#ffd75d&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1\n&lt;color=#ffd75d&gt;Armament: &lt;/color&gt;Storm Bolter x1, Stormbringer Cannon x1\n&lt;color=#ffd75d&gt;Fuel type:&lt;/color&gt; Chemfuel\n\nThe armament of this vehicle can be equipped with the following types of ammunition:</description>
 		<graphicData>
 			<texPath>Things/Vehicles/Annihilator/annihilator</texPath>
 			<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
@@ -62,9 +62,9 @@
 		<nameable>true</nameable>
 
 		<vehicleStats>
-			<Mass>510</Mass>
+			<Mass>1300</Mass>
 			<MoveSpeed>6</MoveSpeed>
-			<CargoCapacity>350</CargoCapacity>
+			<CargoCapacity>780</CargoCapacity>
 			<RepairRate>0.5</RepairRate>
 		</vehicleStats>
 
@@ -96,10 +96,10 @@
 		</soundOneShotsOnEvent>
 
 		<statBases>
-			<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
-			<ArmorRating_Sharp>1.35</ArmorRating_Sharp>
-			<ArmorRating_Heat>1.05</ArmorRating_Heat>
-			<Flammability>0.2</Flammability>
+			<ArmorRating_Blunt>55</ArmorRating_Blunt>			<!-- Mpa -->
+			<ArmorRating_Sharp>28</ArmorRating_Sharp>			<!-- RHA in mm -->
+			<ArmorRating_Heat>1.0</ArmorRating_Heat>
+			<Flammability>0</Flammability>
 			<MarketValue>6000</MarketValue>
 		</statBases>
 
@@ -167,7 +167,7 @@
 						<indicator>VF_Explosive</indicator>
 						<chance>0.10</chance>
 						<radius>3</radius>
-						<damageDef>Burn</damageDef>
+						<damageDef>Bomb</damageDef>
 					</li>
 				</reactors>
 				<hitbox>
@@ -190,7 +190,7 @@
 						<indicator>VF_Explosive</indicator>
 						<chance>0.10</chance>
 						<radius>3</radius>
-						<damageDef>Burn</damageDef>
+						<damageDef>Bomb</damageDef>
 					</li>
 				</reactors>
 				<hitbox>
@@ -324,11 +324,11 @@
 			<li>
 				<key>FrontArmorPlating</key>
 				<label>Front Armor Plating</label>
-				<health>300</health>
+				<health>900</health>
 				<depth>External</depth>
 				<armor>
-					<ArmorRating_Blunt>1.2</ArmorRating_Blunt>
-					<ArmorRating_Sharp>1.4</ArmorRating_Sharp>
+					<ArmorRating_Blunt>55</ArmorRating_Blunt>
+					<ArmorRating_Sharp>28</ArmorRating_Sharp>
 				</armor>
 
 				<hitbox>
@@ -338,12 +338,12 @@
 			<li>
 				<key>LeftArmorPlating</key>
 				<label>Left Armor Plating</label>
-				<health>300</health>
+				<health>900</health>
 				<depth>External</depth>
 
 				<armor>
-					<ArmorRating_Blunt>1.15</ArmorRating_Blunt>
-					<ArmorRating_Sharp>1.3</ArmorRating_Sharp>
+					<ArmorRating_Blunt>55</ArmorRating_Blunt>
+					<ArmorRating_Sharp>27</ArmorRating_Sharp>
 				</armor>
 
 				<hitbox>
@@ -353,12 +353,12 @@
 			<li>
 				<key>RightArmorPlating</key>
 				<label>Right Armor Plating</label>
-				<health>300</health>
+				<health>900</health>
 				<depth>External</depth>
 
 				<armor>
-					<ArmorRating_Blunt>1.15</ArmorRating_Blunt>
-					<ArmorRating_Sharp>1.3</ArmorRating_Sharp>
+					<ArmorRating_Blunt>55</ArmorRating_Blunt>
+					<ArmorRating_Sharp>27</ArmorRating_Sharp>
 				</armor>
 
 				<hitbox>
@@ -368,11 +368,11 @@
 			<li>
 				<key>BackArmorPlating</key>
 				<label>Rear Armor Plating</label>
-				<health>300</health>
+				<health>850</health>
 				<depth>External</depth>
 				<armor>
-					<ArmorRating_Blunt>0.9</ArmorRating_Blunt>
-					<ArmorRating_Sharp>1</ArmorRating_Sharp>
+					<ArmorRating_Blunt>55</ArmorRating_Blunt>
+					<ArmorRating_Sharp>25</ArmorRating_Sharp>
 				</armor>
 
 				<hitbox>
@@ -393,8 +393,8 @@
 					<li Class = "Vehicles.Reactor_Explosive">
 						<indicator>VF_Explosive</indicator>
 						<chance>0.20</chance>
-						<radius>10</radius>
-						<damageDef>Burn</damageDef>
+						<radius>3</radius>
+						<damageDef>Bomb</damageDef>
 					</li>
 				</reactors>
 				<hitbox>
@@ -421,9 +421,13 @@
 			<li>
 				<key>Roof</key>
 				<label>Roof</label>
-				<health>200</health>
+				<health>600</health>
 				<depth>External</depth>
 				<hitWeight>10</hitWeight>
+				<armor>
+					<ArmorRating_Blunt>55</ArmorRating_Blunt>
+					<ArmorRating_Sharp>23</ArmorRating_Sharp>
+				</armor>
 			</li>
 		</components>
 
@@ -475,6 +479,10 @@
 				</turrets>
 			</li>
 		</comps>
+		<descriptionHyperlinks>
+			<CombatExtended.AmmoSetDef>AmmoSet_NcfcLascannon</CombatExtended.AmmoSetDef>
+			<CombatExtended.AmmoSetDef>AmmoSet_Bolter75</CombatExtended.AmmoSetDef>
+		</descriptionHyperlinks>
 	</Vehicles.VehicleDef>
 	<!--=============TURRETS=============-->
 
@@ -486,7 +494,7 @@
 		<turretType>Rotatable</turretType>
 		<shotSound>GF40K_LascannonShot</shotSound>
 		<reloadSound>GF40K_LascannonReload</reloadSound>
-		<projectile>Stormbringer_Projectile</projectile>
+		<projectile>Bullet_NcfcLascannon</projectile>		<!-- ce adjusted -->
 
 		<reloadTimer>2.3</reloadTimer>
 		<warmUpTimer>3.3</warmUpTimer>
@@ -496,19 +504,20 @@
 			<dissipationCapMultiplier>0.75</dissipationCapMultiplier>
 		</cooldown>
 
-		<magazineCapacity>6</magazineCapacity>
-		<genericAmmo>true</genericAmmo>
-		<chargePerAmmoCount>4</chargePerAmmoCount>
+		<magazineCapacity>3</magazineCapacity>
+		<genericAmmo>false</genericAmmo>		<!-- ce adjusted -->
+		<chargePerAmmoCount>1</chargePerAmmoCount>		<!-- ce adjusted -->
 
+		<hitFlags>IntendedTarget</hitFlags>
 		<autoSnapTargeting>false</autoSnapTargeting>
 		<rotationSpeed>0.93</rotationSpeed>
 
 		<projectileOffset>3.45</projectileOffset>
-		<projectileShifting>
-			<li>-0.2</li>
-			<li>0.2</li>
-		</projectileShifting>
-
+		<!-- 			<projectileShifting>
+				<li>-0.2</li>
+				<li>0.2</li>
+			</projectileShifting>
+ -->
 		<minRange>10</minRange>
 		<maxRange>75</maxRange>
 
@@ -520,10 +529,10 @@
 
 		<fireModes>
 			<li>
-				<shotsPerBurst>6</shotsPerBurst>
+				<shotsPerBurst>3</shotsPerBurst>
 				<ticksBetweenShots>12</ticksBetweenShots>
 				<ticksBetweenBursts>18</ticksBetweenBursts>
-				<spreadRadius>2.3</spreadRadius>
+				<spreadRadius>1.2</spreadRadius>
 				<label>Burst</label>
 				<texPath>UI/Gizmos/FireRate_Burst</texPath>
 			</li>
@@ -542,13 +551,25 @@
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
 			<drawSize>(5.8,5.8)</drawSize>
+			<layer>2</layer>
 		</graphicData>
 
 		<ammunition>
 			<thingDefs>
-				<li>Chemfuel</li>
+				<li>Ammo_NcfcLascannonPowerPack</li>
 			</thingDefs>
 		</ammunition>
+
+		<modExtensions>
+			<li Class="Vehicles.CETurretDataDefModExtension">
+				<ammoSet>AmmoSet_NcfcLascannon</ammoSet>
+				<shotHeight>3</shotHeight>
+				<sway>1.0</sway>
+				<spread>1.5</spread>
+				<recoil>0</recoil>
+				<speed>200</speed>
+			</li>
+		</modExtensions>
 
 		<motes>
 			<li>
@@ -559,27 +580,5 @@
 		</motes>
 
 	</Vehicles.VehicleTurretDef>
-	<!--Stormbolter base in Rhino-->
-
-	<!--Stormbringer Cannon Projectile-->
-	<ThingDef ParentName="BaseBullet">		<!--Add-->
-		<defName>Stormbringer_Projectile</defName>
-		<label>Stormbringer beam</label>
-		<thingClass>Projectile_Explosive</thingClass>
-		<!--<altitudeLayer>MoteOverhead</altitudeLayer>-->
-		<graphicData>
-			<texPath>Things/Projectiles/Shot_LasCannon</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(2,2)</drawSize>
-		</graphicData>
-		<projectile>
-			<damageDef>Burn</damageDef>
-			<damageAmountBase>80</damageAmountBase>
-			<explosionRadius>1.3</explosionRadius>
-			<stoppingPower>2.0</stoppingPower>
-			<speed>120</speed>
-			<soundExplode>Explosion_Rocket</soundExplode>
-			<screenShakeFactor>0.3</screenShakeFactor>
-		</projectile>
-	</ThingDef>
+	<!--Annihilator Stormbolter uses Rhino's Stormbolter_base-->
 </Defs>

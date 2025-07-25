@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/vehicleStats/Mass</xpath>
+        <value>1300</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/vehicleStats/CargoCapacity</xpath>
+        <value>780</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/statBases/ArmorRating_Blunt</xpath>
+        <value>55</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/statBases/ArmorRating_Sharp</xpath>
+        <value>28</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/statBases/ArmorRating_Heat</xpath>
+        <value>1</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/statBases/Flammability</xpath>
+        <value>0</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="FrontArmorPlating"]/armor/ArmorRating_Blunt</xpath>
+        <value>55</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="FrontArmorPlating"]/armor/ArmorRating_Sharp</xpath>
+        <value>28</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="LeftArmorPlating"]/armor/ArmorRating_Blunt</xpath>
+        <value>55</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="LeftArmorPlating"]/armor/ArmorRating_Sharp</xpath>
+        <value>27</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="RightArmorPlating"]/armor/ArmorRating_Blunt</xpath>
+        <value>55</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="RightArmorPlating"]/armor/ArmorRating_Sharp</xpath>
+        <value>27</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="BackArmorPlating"]/armor/ArmorRating_Blunt</xpath>
+        <value>55</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="BackArmorPlating"]/armor/ArmorRating_Sharp</xpath>
+        <value>25</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="Roof"]/armor/ArmorRating_Blunt</xpath>
+        <value>55</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="Roof"]/armor/ArmorRating_Sharp</xpath>
+        <value>23</value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]</xpath>
+        <value>
+            <descriptionHyperlinks>
+                <CombatExtended.AmmoSetDef>AmmoSet_NcfcLascannon</CombatExtended.AmmoSetDef>
+                <CombatExtended.AmmoSetDef>AmmoSet_Bolter75</CombatExtended.AmmoSetDef>
+            </descriptionHyperlinks>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Annihilator_MainCannon"]/projectile</xpath>
+        <value>Bullet_NcfcLascannon</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Annihilator_MainCannon"]/magazineCapacity</xpath>
+        <value>3</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Annihilator_MainCannon"]/genericAmmo</xpath>
+        <value>false</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Annihilator_MainCannon"]/chargePerAmmoCount</xpath>
+        <value>1</value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Annihilator_MainCannon"]/projectileShifting</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Annihilator_MainCannon"]/fireModes/li[label="Burst"]/shotsPerBurst</xpath>
+        <value>3</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Annihilator_MainCannon"]/fireModes/li[label="Burst"]/spreadRadius</xpath>
+        <value>1.2</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Annihilator_MainCannon"]/ammunition/thingDefs</xpath>
+        <value>
+            <thingDefs>
+                <li>Ammo_NcfcLascannonPowerPack</li>
+            </thingDefs>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Annihilator_MainCannon"]</xpath>
+        <value>
+            <li Class="Vehicles.CETurretDataDefModExtension">
+                <ammoSet>AmmoSet_NcfcLascannon</ammoSet>
+                <shotHeight>3</shotHeight>
+                <sway>1.0</sway>
+                <spread>1.5</spread>
+                <recoil>0</recoil>
+                <speed>200</speed>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>
