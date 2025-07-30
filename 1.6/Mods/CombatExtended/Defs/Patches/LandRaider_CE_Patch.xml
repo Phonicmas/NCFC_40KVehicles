@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaider"]/vehicleStats/Mass</xpath>
+        <value>2340</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaider"]/vehicleStats/CargoCapacity</xpath>
+        <value>1500</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaider"]/statBases/ArmorRating_Blunt</xpath>
+        <value>192</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaider"]/statBases/ArmorRating_Sharp</xpath>
+        <value>47</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaider"]/statBases/ArmorRating_Heat</xpath>
+        <value>1.15</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaider"]/components/li[key="FrontArmorPlating"]/health</xpath>
+        <value>900</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaider"]/components/li[key="LeftArmorPlating"]/health</xpath>
+        <value>900</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaider"]/components/li[key="RightArmorPlating"]/health</xpath>
+        <value>900</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaider"]/components/li[key="BackArmorPlating"]/health</xpath>
+        <value>900</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaider"]/components/li[key="Roof"]/health</xpath>
+        <value>200</value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaider"]</xpath>
+        <value>
+            <descriptionHyperlinks>
+                <CombatExtended.AmmoSetDef>AmmoSet_NCFCBolter998</CombatExtended.AmmoSetDef>
+                <CombatExtended.AmmoSetDef>AmmoSet_NcfcLascannon</CombatExtended.AmmoSetDef>
+            </descriptionHyperlinks>
+        </value>
+    </Operation>
+
+    <!-- Mrain Turret -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_MainTurret"]/projectile</xpath>
+        <value>Bullet_NCFCBolter998_Standard</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_MainTurret"]/maxRange</xpath>
+        <value>45</value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_MainTurret"]/projectileShifting</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_MainTurret"]</xpath>
+        <value>
+            <li Class="Vehicles.CETurretDataDefModExtension">
+                <ammoSet>AmmoSet_NCFCBolter998</ammoSet>
+                <shotHeight>3.0</shotHeight>
+                <speed>190</speed>
+                <sway>1.0</sway>
+                <spread>0.01</spread>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_MainTurret"]/ammunition/thingDefs</xpath>
+        <value>
+            <thingDefs>
+                <li>Ammo_NCFCBolter998_Standard</li>
+            </thingDefs>
+        </value>
+    </Operation>
+
+    <!-- Side Turret Left -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_SideTurretLeft"]/projectile</xpath>
+        <value>Bullet_NcfcLascannon</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_SideTurretLeft"]/warmUpTimer</xpath>
+        <value>4.2</value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_SideTurretLeft"]</xpath>
+        <value>
+            <li Class="Vehicles.CETurretDataDefModExtension">
+                <ammoSet>AmmoSet_NcfcLascannon</ammoSet>
+                <shotHeight>3</shotHeight>
+                <sway>1.0</sway>
+                <spread>0.01</spread>
+                <recoil>0</recoil>
+                <speed>200</speed>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_SideTurretLeft"]/cooldown/heatPerShot</xpath>
+        <value>8</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_SideTurretLeft"]/magazineCapacity</xpath>
+        <value>2</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_SideTurretLeft"]/chargePerAmmoCount</xpath>
+        <value>1</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_SideTurretLeft"]/genericAmmo</xpath>
+        <value>false</value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_SideTurretLeft"]/fireModes/li[label="Quad Shot"]</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_SideTurretLeft"]/ammunition/thingDefs</xpath>
+        <value>
+            <thingDefs>
+                <li>Ammo_NcfcLascannonPowerPack</li>
+            </thingDefs>
+        </value>
+    </Operation>
+
+    <!-- Side Turret Right -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_SideTurretRight"]/projectile</xpath>
+        <value>Bullet_NcfcLascannon</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_SideTurretRight"]/warmUpTimer</xpath>
+        <value>4.2</value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_SideTurretRight"]</xpath>
+        <value>
+            <li Class="Vehicles.CETurretDataDefModExtension">
+                <ammoSet>AmmoSet_NcfcLascannon</ammoSet>
+                <shotHeight>3</shotHeight>
+                <sway>1.0</sway>
+                <spread>0.01</spread>
+                <recoil>0</recoil>
+                <speed>200</speed>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_SideTurretRight"]/cooldown/heatPerShot</xpath>
+        <value>8</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_SideTurretRight"]/magazineCapacity</xpath>
+        <value>2</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_SideTurretRight"]/chargePerAmmoCount</xpath>
+        <value>1</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_SideTurretRight"]/genericAmmo</xpath>
+        <value>false</value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_SideTurretRight"]/fireModes/li[label="Quad Shot"]</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Land_Raider_SideTurretRight"]/ammunition/thingDefs</xpath>
+        <value>
+            <thingDefs>
+                <li>Ammo_NcfcLascannonPowerPack</li>
+            </thingDefs>
+        </value>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/vehicleStats/Mass</xpath>
+        <value>960</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/vehicleStats/CargoCapacity</xpath>
+        <value>850</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/statBases/ArmorRating_Blunt</xpath>
+        <value>95</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/statBases/ArmorRating_Sharp</xpath>
+        <value>30</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/statBases/ArmorRating_Heat</xpath>
+        <value>1</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/statBases/Flammability</xpath>
+        <value>0</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/components/li[key="FrontArmorPlating"]/armor/ArmorRating_Blunt</xpath>
+        <value>45</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/components/li[key="FrontArmorPlating"]/armor/ArmorRating_Sharp</xpath>
+        <value>27</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/components/li[key="FrontArmorPlating"]/health</xpath>
+        <value>900</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/components/li[key="LeftArmorPlating"]/armor/ArmorRating_Blunt</xpath>
+        <value>43</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/components/li[key="LeftArmorPlating"]/armor/ArmorRating_Sharp</xpath>
+        <value>27</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/components/li[key="LeftArmorPlating"]/health</xpath>
+        <value>900</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/components/li[key="RightArmorPlating"]/armor/ArmorRating_Blunt</xpath>
+        <value>43</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/components/li[key="RightArmorPlating"]/armor/ArmorRating_Sharp</xpath>
+        <value>27</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/components/li[key="RightArmorPlating"]/health</xpath>
+        <value>900</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/components/li[key="BackArmorPlating"]/armor/ArmorRating_Blunt</xpath>
+        <value>41</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/components/li[key="BackArmorPlating"]/armor/ArmorRating_Sharp</xpath>
+        <value>25</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/components/li[key="BackArmorPlating"]/health</xpath>
+        <value>900</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/components/li[key="Roof"]/armor/ArmorRating_Blunt</xpath>
+        <value>45</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/components/li[key="Roof"]/armor/ArmorRating_Sharp</xpath>
+        <value>23</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]/components/li[key="Roof"]/health</xpath>
+        <value>600</value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_Rhino"]</xpath>
+        <value>
+            <descriptionHyperlinks>
+                <CombatExtended.AmmoSetDef>AmmoSet_Bolter75</CombatExtended.AmmoSetDef>
+                <CombatExtended.AmmoSetDef>AmmoSet_40x53mmGrenade</CombatExtended.AmmoSetDef>
+            </descriptionHyperlinks>
+        </value>
+    </Operation>
+
+    <!-- Main Turret -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Rhino_MainTurret"]/projectile</xpath>
+        <value>Bullet_NCFCBolter75_Standard</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Rhino_MainTurret"]/magazineCapacity</xpath>
+        <value>64</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Rhino_MainTurret"]/genericAmmo</xpath>
+        <value>false</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Rhino_MainTurret"]/projectileOffset</xpath>
+        <value>0.5</value>
+    </Operation>
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Rhino_MainTurret"]/projectileShifting</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Rhino_MainTurret"]/fireModes/li[label="Burst"]/spreadRadius</xpath>
+        <value>2.1</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Rhino_MainTurret"]/ammunition/thingDefs</xpath>
+        <value>
+            <thingDefs>
+                <li>Ammo_NCFCBolter75_Standard</li>
+            </thingDefs>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Rhino_MainTurret"]</xpath>
+        <value>
+            <li Class="Vehicles.CETurretDataDefModExtension">
+                <ammoSet>AmmoSet_NCFCBolter75</ammoSet>
+                <shotHeight>2.6</shotHeight>
+                <speed>190</speed>
+                <sway>0.8</sway>
+                <spread>1.2</spread>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Smoke Launcher -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Rhino_Smoke_Launcher"]/projectile</xpath>
+        <value>Bullet_40x53mmGrenade_Smoke</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Rhino_Smoke_Launcher"]/genericAmmo</xpath>
+        <value>false</value>
+    </Operation>
+
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Rhino_Smoke_Launcher"]/projectileShifting</xpath>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Rhino_Smoke_Launcher"]/fireModes/li[label="Burst"]/spreadRadius</xpath>
+        <value>8</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_Rhino_Smoke_Launcher"]/ammunition/thingDefs</xpath>
+        <value>
+            <thingDefs>
+                <li>Ammo_40x53mmGrenade_Smoke</li>
+            </thingDefs>
+        </value>
+    </Operation>
+
+</Patch>

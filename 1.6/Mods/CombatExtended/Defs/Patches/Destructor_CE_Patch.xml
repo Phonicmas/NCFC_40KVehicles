@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/vehicleStats/Mass</xpath>
+        <value>1450</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/vehicleStats/CargoCapacity</xpath>
+        <value>780</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/statBases/ArmorRating_Blunt</xpath>
+        <value>55</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/statBases/ArmorRating_Sharp</xpath>
+        <value>28</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/statBases/ArmorRating_Heat</xpath>
+        <value>1</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/statBases/Flammability</xpath>
+        <value>0</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/components/li[key="FrontArmorPlating"]/armor/ArmorRating_Blunt</xpath>
+        <value>55</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/components/li[key="FrontArmorPlating"]/armor/ArmorRating_Sharp</xpath>
+        <value>28</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/components/li[key="FrontArmorPlating"]/health</xpath>
+        <value>900</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/components/li[key="LeftArmorPlating"]/armor/ArmorRating_Blunt</xpath>
+        <value>55</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/components/li[key="LeftArmorPlating"]/armor/ArmorRating_Sharp</xpath>
+        <value>27</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/components/li[key="LeftArmorPlating"]/health</xpath>
+        <value>900</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/components/li[key="RightArmorPlating"]/armor/ArmorRating_Blunt</xpath>
+        <value>55</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/components/li[key="RightArmorPlating"]/armor/ArmorRating_Sharp</xpath>
+        <value>27</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/components/li[key="RightArmorPlating"]/health</xpath>
+        <value>900</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/components/li[key="BackArmorPlating"]/armor/ArmorRating_Blunt</xpath>
+        <value>55</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/components/li[key="BackArmorPlating"]/armor/ArmorRating_Sharp</xpath>
+        <value>25</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/components/li[key="BackArmorPlating"]/health</xpath>
+        <value>850</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/components/li[key="Roof"]/armor/ArmorRating_Blunt</xpath>
+        <value>55</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/components/li[key="Roof"]/armor/ArmorRating_Sharp</xpath>
+        <value>23</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]/components/li[key="Roof"]/health</xpath>
+        <value>600</value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Destructor"]</xpath>
+        <value>
+            <descriptionHyperlinks>
+                <CombatExtended.AmmoSetDef>AmmoSet_57x438mmBofors</CombatExtended.AmmoSetDef>
+                <CombatExtended.AmmoSetDef>AmmoSet_NCFCBolter998</CombatExtended.AmmoSetDef>
+            </descriptionHyperlinks>
+        </value>
+    </Operation>
+
+    <!-- Main Cannon -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Destructor_MainCannon"]/projectile</xpath>
+        <value>Bullet_57x438mmBofors_HE</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Destructor_MainCannon"]/magazineCapacity</xpath>
+        <value>4</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Destructor_MainCannon"]/genericAmmo</xpath>
+        <value>false</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Destructor_MainCannon"]/reloadTimer</xpath>
+        <value>4.3</value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Destructor_MainCannon"]/fireModes</xpath>
+        <value>
+            <li>
+                <label>Burst shot</label>
+                <shotsPerBurst>5</shotsPerBurst>
+                <ticksBetweenShots>15</ticksBetweenShots>
+                <ticksBetweenBursts>60</ticksBetweenBursts>
+                <spreadRadius>2.4</spreadRadius>
+                <texPath>UI/Gizmos/FireRate_Burst</texPath>
+            </li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Destructor_MainCannon"]/fireModes/li[label="Single shot"]/ticksBetweenShots</xpath>
+        <value>15</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Destructor_MainCannon"]/fireModes/li[label="Single shot"]/spreadRadius</xpath>
+        <value>1.1</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Destructor_MainCannon"]/ammunition/thingDefs</xpath>
+        <value>
+            <thingDefs>
+                <li>Ammo_57x438mmBofors_HE</li>
+            </thingDefs>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Destructor_MainCannon"]</xpath>
+        <value>
+            <li Class="Vehicles.CETurretDataDefModExtension">
+                <ammoSet>AmmoSet_57x438mmBofors</ammoSet>
+                <shotHeight>3.3</shotHeight>
+                <speed>190</speed>
+                <sway>1.61</sway>
+                <spread>1</spread>
+            </li>
+        </value>
+    </Operation>
+
+    <!-- Bolter Left -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "HeavyBolter_left"]/projectile</xpath>
+        <value>Bullet_NCFCBolter998_Standard</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "HeavyBolter_left"]/maxRange</xpath>
+        <value>42</value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "HeavyBolter_left"]</xpath>
+        <value>
+            <li Class="Vehicles.CETurretDataDefModExtension">
+                <ammoSet>AmmoSet_NCFCBolter998</ammoSet>
+                <shotHeight>3.0</shotHeight>
+                <speed>190</speed>
+                <sway>1.0</sway>
+                <spread>0.01</spread>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "HeavyBolter_left"]/ammunition/thingDefs</xpath>
+        <value>
+            <thingDefs>
+                <li>Ammo_NCFCBolter998_Standard</li>
+            </thingDefs>
+        </value>
+    </Operation>
+
+    <!-- Bolter Right -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "HeavyBolter_right"]/projectile</xpath>
+        <value>Bullet_NCFCBolter998_Standard</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "HeavyBolter_right"]/maxRange</xpath>
+        <value>42</value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "HeavyBolter_right"]</xpath>
+        <value>
+            <li Class="Vehicles.CETurretDataDefModExtension">
+                <ammoSet>AmmoSet_NCFCBolter998</ammoSet>
+                <shotHeight>3.0</shotHeight>
+                <speed>190</speed>
+                <sway>1.0</sway>
+                <spread>0.01</spread>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "HeavyBolter_right"]/ammunition/thingDefs</xpath>
+        <value>
+            <thingDefs>
+                <li>Ammo_NCFCBolter998_Standard</li>
+            </thingDefs>
+        </value>
+    </Operation>
+
+</Patch>

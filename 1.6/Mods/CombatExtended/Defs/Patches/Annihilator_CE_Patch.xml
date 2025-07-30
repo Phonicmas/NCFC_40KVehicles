@@ -35,6 +35,10 @@
         <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="FrontArmorPlating"]/armor/ArmorRating_Sharp</xpath>
         <value>28</value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="FrontArmorPlating"]/health</xpath>
+        <value>900</value>
+    </Operation>
 
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="LeftArmorPlating"]/armor/ArmorRating_Blunt</xpath>
@@ -43,6 +47,10 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="LeftArmorPlating"]/armor/ArmorRating_Sharp</xpath>
         <value>27</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="LeftArmorPlating"]/health</xpath>
+        <value>900</value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
@@ -53,6 +61,10 @@
         <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="RightArmorPlating"]/armor/ArmorRating_Sharp</xpath>
         <value>27</value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="RightArmorPlating"]/health</xpath>
+        <value>900</value>
+    </Operation>
 
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="BackArmorPlating"]/armor/ArmorRating_Blunt</xpath>
@@ -62,6 +74,10 @@
         <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="BackArmorPlating"]/armor/ArmorRating_Sharp</xpath>
         <value>25</value>
     </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="BackArmorPlating"]/health</xpath>
+        <value>850</value>
+    </Operation>
 
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="Roof"]/armor/ArmorRating_Blunt</xpath>
@@ -70,6 +86,10 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="Roof"]/armor/ArmorRating_Sharp</xpath>
         <value>23</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "Annihilator"]/components/li[key="Roof"]/health</xpath>
+        <value>600</value>
     </Operation>
 
     <Operation Class="PatchOperationAdd">

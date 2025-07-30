@@ -532,7 +532,6 @@
 		<reloadTimer>2.7</reloadTimer>
 		<warmUpTimer>3</warmUpTimer>
 		<magazineCapacity>60</magazineCapacity>
-
 		<genericAmmo>true</genericAmmo>
 		<autoSnapTargeting>false</autoSnapTargeting>
 

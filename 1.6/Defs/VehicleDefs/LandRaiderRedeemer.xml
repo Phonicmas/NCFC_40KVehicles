@@ -675,7 +675,6 @@
 		<magazineCapacity>3</magazineCapacity>
 		<chargePerAmmoCount>1</chargePerAmmoCount>
 		<genericAmmo>true</genericAmmo>
-
 		<autoSnapTargeting>false</autoSnapTargeting>
 		<projectileOffset>3.15</projectileOffset>
 

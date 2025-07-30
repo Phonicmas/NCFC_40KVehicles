@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaiderRDMR"]/vehicleStats/Mass</xpath>
+        <value>2340</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaiderRDMR"]/vehicleStats/CargoCapacity</xpath>
+        <value>1500</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaiderRDMR"]/statBases/ArmorRating_Blunt</xpath>
+        <value>192</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaiderRDMR"]/statBases/ArmorRating_Sharp</xpath>
+        <value>47</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaiderRDMR"]/statBases/ArmorRating_Heat</xpath>
+        <value>1.15</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaiderRDMR"]/components/li[key="FrontArmorPlating"]/health</xpath>
+        <value>900</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaiderRDMR"]/components/li[key="LeftArmorPlating"]/health</xpath>
+        <value>900</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaiderRDMR"]/components/li[key="RightArmorPlating"]/health</xpath>
+        <value>900</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaiderRDMR"]/components/li[key="BackArmorPlating"]/health</xpath>
+        <value>900</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaiderRDMR"]/components/li[key="Roof"]/health</xpath>
+        <value>200</value>
+    </Operation>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/Vehicles.VehicleDef[defName = "GF40K_LandRaiderRDMR"]</xpath>
+        <value>
+            <descriptionHyperlinks>
+                <CombatExtended.AmmoSetDef>AmmoSet_50BMG</CombatExtended.AmmoSetDef>
+                <CombatExtended.AmmoSetDef>AmmoSet_Flamethrower</CombatExtended.AmmoSetDef>
+            </descriptionHyperlinks>
+        </value>
+    </Operation>
+
+    <!-- Mrain Turret -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_MainTurret"]/projectile</xpath>
+        <value>Bullet_50BMG_FMJ</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_MainTurret"]/cooldown/heatPerShot</xpath>
+        <value>0.8</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_MainTurret"]/genericAmmo</xpath>
+        <value>true</value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_MainTurret"]</xpath>
+        <value>
+            <li Class="Vehicles.CETurretDataDefModExtension">
+                <ammoSet>AmmoSet_50BMG</ammoSet>
+                <shotHeight>3.0</shotHeight>
+                <speed>190</speed>
+                <sway>1</sway>
+                <spread>1</spread>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Annihilator_MainCannon"]/fireModes/li[label="Auto"]/spreadRadius</xpath>
+        <value>1.4</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Annihilator_MainCannon"]/fireModes/li[label="Burst"]/spreadRadius</xpath>
+        <value>1.2</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "Annihilator_MainCannon"]/fireModes/li[label="Full Auto"]/spreadRadius</xpath>
+        <value>3</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_MainTurret"]/ammunition/thingDefs</xpath>
+        <value>
+            <thingDefs>
+                <li>Ammo_50BMG_FMJ</li>
+            </thingDefs>
+        </value>
+    </Operation>
+
+    <!-- Side Turret Left -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_SideTurretLeft"]/projectile</xpath>
+        <value>Bullet_Flamethrower_Prometheum</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_SideTurretLeft"]/maxRange</xpath>
+        <value>40</value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_SideTurretLeft"]</xpath>
+        <value>
+            <li Class="Vehicles.CETurretDataDefModExtension">
+                <ammoSet>AmmoSet_Flamethrower</ammoSet>
+                <shotHeight>2.0</shotHeight>
+                <speed>20</speed>
+                <sway>0.25</sway>
+                <spread>1.80</spread>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_SideTurretLeft"]/magazineCapacity</xpath>
+        <value>10</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_SideTurretLeft"]/genericAmmo</xpath>
+        <value>false</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_SideTurretLeft"]/projectileOffset</xpath>
+        <value>1</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_SideTurretLeft"]/fireModes/li[label="Fire Spew"]/shotsPerBurst</xpath>
+        <value>10</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_SideTurretLeft"]/fireModes/li[label="Fire Spew"]/ticksBetweenShots</xpath>
+        <value>3</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_SideTurretLeft"]/fireModes/li[label="Fire Spew"]/ticksBetweenBursts</xpath>
+        <value>60</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_SideTurretLeft"]/ammunition/thingDefs</xpath>
+        <value>
+            <thingDefs>
+                <li>Ammo_Flamethrower_Prometheum</li>
+            </thingDefs>
+        </value>
+    </Operation>
+
+    <!-- Side Turret Right -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_SideTurretRight"]/projectile</xpath>
+        <value>Bullet_Flamethrower_Prometheum</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_SideTurretRight"]/maxRange</xpath>
+        <value>40</value>
+    </Operation>
+
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_SideTurretRight"]</xpath>
+        <value>
+            <li Class="Vehicles.CETurretDataDefModExtension">
+                <ammoSet>AmmoSet_Flamethrower</ammoSet>
+                <shotHeight>2.0</shotHeight>
+                <speed>20</speed>
+                <sway>0.25</sway>
+                <spread>1.80</spread>
+            </li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_SideTurretRight"]/magazineCapacity</xpath>
+        <value>10</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_SideTurretRight"]/genericAmmo</xpath>
+        <value>false</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_SideTurretRight"]/projectileOffset</xpath>
+        <value>1</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_SideTurretRight"]/fireModes/li[label="Fire Spew"]/shotsPerBurst</xpath>
+        <value>10</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_SideTurretRight"]/fireModes/li[label="Fire Spew"]/ticksBetweenShots</xpath>
+        <value>3</value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_SideTurretRight"]/fireModes/li[label="Fire Spew"]/ticksBetweenBursts</xpath>
+        <value>60</value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/Vehicles.VehicleTurretDef[defName = "GF40K_LandRaiderRDMR_SideTurretRight"]/ammunition/thingDefs</xpath>
+        <value>
+            <thingDefs>
+                <li>Ammo_Flamethrower_Prometheum</li>
+            </thingDefs>
+        </value>
+    </Operation>
+
+</Patch>
